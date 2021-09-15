@@ -7,9 +7,6 @@
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-.card:hover:after {
-    opacity: 5;
-}
 
 .container {
     padding: 2px 16px;
@@ -20,4 +17,8 @@ img {
     margin-top: 60px;
     margin-bottom: 60px;
     border-radius: 12px 12px 12px 12px;
+}
+
+img:hover{
+    opacity: 0.5;
 }
