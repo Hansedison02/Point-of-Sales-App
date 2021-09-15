@@ -10,6 +10,18 @@
     width: 50%;
 }
 
+.Font
+{
+    font-family: Comfortaa, sans-serif;
+    color: #25dbca;
+}
+
+.Font2
+{
+    font-family: Comfortaa, sans-serif;
+    color: #f1edec;
+}
+
 .responsive {
     width:75%;
     height: auto;
