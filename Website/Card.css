@@ -6,6 +6,8 @@
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    opacity: 0.5;
+    transition: 0.25s;
 }
 
 .container {
@@ -13,12 +15,8 @@
 }
 
 img {
-    margin-left: 120px;
+    margin-left: 180px;
     margin-top: 60px;
     margin-bottom: 60px;
     border-radius: 12px 12px 12px 12px;
-}
-
-img:hover{
-    opacity: 0.5;
 }
