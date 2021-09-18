@@ -2,7 +2,15 @@
 {
     background-color: #18191d;
 }
-
+.NA
+{
+    margin-top: 60px;
+    color: #f1edec;
+    text-align: center;
+    font-size: 48px;
+    letter-spacing: 15px;
+    font-family: Montserrat SemiBold, sans-serif;
+}
 .Logo
 {
     display: block;
@@ -29,6 +37,11 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+}
+
+.dropdown-menu{
+    background-color: #282e33;
+    border-radius: 12px;
 }
 
 .NavBar a:hover {
