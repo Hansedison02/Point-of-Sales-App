@@ -28,7 +28,7 @@
 }
 
 .NavBar {
-    background-color: #282e33;;
+    background-color: #282e33;
     font-family: Comfortaa, sans-serif;
     overflow: hidden;
 }
@@ -40,6 +40,61 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+}
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #282e33;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f1edec;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #25dbca;
+    background-color: #18191b;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #282e33;
+    color: #f1edec;
+    padding: 10px 15px;
+    margin-left: 100px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #18191b;
+    color: #25dbca;
+}
+
+#navBar {
+    transition: margin-left .5s;
+    padding: 10px;
 }
 
 .dropdown-menu{
@@ -53,7 +108,7 @@
 }
 
 .NavBar a.active {
-    background-color: rgba(24, 25, 29, 0.7);
+    background-color: #18191b;
     color: #25dbca;
 }
 .NavBar .icon {
@@ -91,4 +146,8 @@
         display: block;
         text-align: left;
     }
+}
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
 }
