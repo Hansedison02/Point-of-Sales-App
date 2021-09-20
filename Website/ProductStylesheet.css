@@ -65,7 +65,7 @@
 .ProductTable
 {
     border: 1px solid #282e33;
-    border-radius:8px;
+    border-radius:10px;
     margin-bottom: 20px;
     margin-top: 10px;
     background: #282e33;
@@ -74,14 +74,14 @@
 
 .ProductTable .Title
 {
-    border-bottom: 1px solid #435969;
+    border-radius: 0 8px 0 0;
     padding-bottom: 20px;
     padding-left: 20px;
     padding-top: 16px;
     position: relative;
     color: #25dbca;
     font-family: Montserrat SemiBold, sans-serif;
-    background: #435969
+    background: #435969;
 }
 
 .ProductTable .Title h5 a span
@@ -98,8 +98,16 @@
     color: #f5f5f5;
     line-height: 20px;
     padding: 10px 14px 16px 19px;
-    background: #435969
+    background: #435969;
 }
+
+.ProductTable .InfoPadding
+{
+    background: #435969;
+    border-radius: 0 0 8px 0;
+    padding: 11px 19px 10px 20px
+}
+
 
 .Title .Price
 {
@@ -114,47 +122,6 @@
 {
     font-size: 12px;
 }
-
-.Button-CART
-{
-    border-radius: 6px;
-    -moz-border-radius:6px;
-    font-family: Comfortaa, sans-serif;
-    position: relative;
-    color: #f5f5f5;
-    border:1px solid transparent;
-    transition: all 0.40s ease 0s;
-}
-
-.Button-CART:after
-{
-    content: "\f07a";
-    font-family: fontawesome, sans-serif;
-    position: absolute;
-    right: 6px;
-    top: -4px;
-    opacity: 0;
-    color: #f5f5f5;
-    transition: all 0.40s ease 0s;
-}
-
-.Button-CART:hover:after
-{
-    top:40%;
-    opacity: 5;
-}
-
-.Button-CART span
-{
-    display: block;
-    transition: all 0.70s linear 0s;
-}
-
-.Button-CART:hover span
-{
-    transform: translate(-9px);
-}
-
 .btn-info
 {
     background: #24d6c5;
@@ -195,10 +162,6 @@
     transform: translate(-9px);
 }
 
-.ProductTable .InfoPadding
-{
-    padding: 11px 19px 10px 20px
-}
 
 @media only screen and (min-width:1024px) {
     .ProductTable div[class*=col-md-4] {

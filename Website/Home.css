@@ -9,6 +9,10 @@
     margin-right: auto;
     width: 50%;
 }
+card a img:hover{
+    opacity: 0.5;
+    transition: 2.5s;
+}
 
 .Font
 {

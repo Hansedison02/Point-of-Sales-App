@@ -3,68 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <title>Arisaka Type 38 Product Detail</title>
+    <link rel="stylesheet" href="Detail%20Page%20StyleSheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Detail%20Page%20StyleSheet.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-
+    <script src=Responsive.js></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body class="bg-color">
-<div class="container">
-    <div class="card">
+<div class="Logo">
+    <img src= Assets/Logo.png alt="Logo" class="responsive">
+</div>
+<div class="NavBar" id="navBar">
+    <a href="Index.html">Home</a>
+    <a class="active nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Product
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="HGProduct.html">Handgun</a>
+            <a class="active dropdown-item" href="RProduct.html">Rifle</a>
+            <a class="dropdown-item" href="ARProduct.html">Assault Rifle</a>
+            <a class="dropdown-item" href="SMGProduct.html">Sub-Machine Gun</a>
+        </div>
+    </a>
+    <a href="#">How to Buy</a>
+    <a href="#">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="ResFunc()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+<div class="container bg-color">
         <div class="container-fluid">
             <div class="wrapper row">
-                <div class="preview col-md-6">
+                <div class="preview bg-color2 col-md-6">
 
                     <div class="preview-pic tab-content">
-                        <div class="tab-pane active" id="pic-1"><img src="http://placekitten.com/400/252" /></div>
-                        <div class="tab-pane" id="pic-2"><img src="http://placekitten.com/400/252" /></div>
-                        <div class="tab-pane" id="pic-3"><img src="http://placekitten.com/400/252" /></div>
-                        <div class="tab-pane" id="pic-4"><img src="http://placekitten.com/400/252" /></div>
-                        <div class="tab-pane" id="pic-5"><img src="http://placekitten.com/400/252" /></div>
+                        <div class="tab-pane active" id="pic-1"><img src="Assets/A38.png" /></div>
                     </div>
                     <ul class="preview-thumbnail nav nav-tabs">
-                        <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>
-                        <li><a data-target="#pic-2" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>
-                        <li><a data-target="#pic-3" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>
-                        <li><a data-target="#pic-4" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>
-                        <li><a data-target="#pic-5" data-toggle="tab"><img src="http://placekitten.com/200/126" /></a></li>
+                        <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="Assets/GLT.gif"/></a></li>
                     </ul>
-
                 </div>
-                <div class="details col-md-6">
-                    <h3 class="product-title">men's shoes fashion</h3>
+                <div class="preview col-md-6">
+                    <h3 class="product-title">Arisaka Type-38</h3>
                     <div class="rating">
-                        <span class="review-no">41 reviews</span>
+                        <span class="review-no">Rifle</span>
                     </div>
-                    <p class="product-description">Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa senectus enim minim sociosqu delectus posuere.</p>
-                    <h4 class="price">current price: <span>$180</span></h4>
-                    <p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>
-                    <h5 class="sizes">sizes:
-                        <span class="size" data-toggle="tooltip" title="small">s</span>
-                        <span class="size" data-toggle="tooltip" title="medium">m</span>
-                        <span class="size" data-toggle="tooltip" title="large">l</span>
-                        <span class="size" data-toggle="tooltip" title="xtra large">xl</span>
-                    </h5>
-                    <h5 class="colors">colors:
-                        <span class="color orange not-available" data-toggle="tooltip" title="Not In store"></span>
-                        <span class="color green"></span>
-                        <span class="color blue"></span>
-                    </h5>
+                    <p class="product-description">
+                        The Type 38 rifle (sanhachi-shiki hoheijū) is a bolt-action service rifle that was used by the Empire of Japan predominantly during the Second Sino-Japanese War and Second World War. The design was adopted by the Imperial Japanese Army in 1905 (the 38th year of the Meiji period, hence "Type 38").It was partially replaced during the war with the Type 99 rifle, but both rifles saw usage until the end of the war.
+                    </p>
+                    <p class="product-description">
+                        <span>Manufacturer:</span> S&T
+                    </p>
+                    <p class="product-description">
+                        <span>Length:</span> 1290mm
+                    </p>
+                    <p class="product-description">
+                        <span>Type:</span> Bolt-Action Airsoft
+                    </p>
+                    <p class="product-description">
+                        <span>Magazine Rounds:</span> 26 BB
+                    </p>
+                    <p class="product-description">
+                        <span>FPS Range:</span> 380-400
+                    </p>
+                    <h4 class="price">Price: <span>$180</span></h4>
                     <div class="action">
-                        <button class="add-to-cart btn btn-default" type="button">add to cart</button>
-                        <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>
+                        <a href="Order.html" class="btn btn-info" type="button">Order</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </body>
 </html>
