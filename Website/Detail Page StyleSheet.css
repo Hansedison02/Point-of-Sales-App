@@ -7,6 +7,10 @@
     background-color: #282e33;
     border-radius: 12px;
 }
+.bg-color3{
+    background: #435969;
+}
+
 .Logo
 {
     display: block;
@@ -56,6 +60,8 @@
 .product-title{
     color: #25dbca;
     font-family: Montserrat SemiBold, sans-serif;
+    background: #435969;
+    padding-top: 20px;
 }
 .rating{
     color: #f1edec;
@@ -85,8 +91,6 @@ img {
 }
 .btn-info:after
 {
-    content: "\f129";
-    font-family: fontawesome, sans-serif;
     position: absolute;
     right: 6px;
     top: -4px;
