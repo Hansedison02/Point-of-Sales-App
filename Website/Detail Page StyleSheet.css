@@ -77,13 +77,14 @@ img {
     background-color: #282e33;
     border-radius: 12px;
 }
+
 .btn-info
 {
     background: #24d6c5;
     border-radius: 6px;
     -moz-border-radius:6px;
     font-family: Comfortaa, sans-serif;
-    font-size: 10px;
+    font-size: 20px;
     position: relative;
     color: #f1edec;
     border:1px solid transparent;
@@ -233,12 +234,6 @@ img {
     border-radius: 2px; }
 .color:first-of-type {
     margin-left: 20px; }
-.not-available {
-    text-align: center;
-    line-height: 2em; }
-.not-available:before {
-    font-family: fontawesome;
-    content: "\f00d"; }
 
 
 .tooltip-inner {
