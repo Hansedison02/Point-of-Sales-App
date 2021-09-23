@@ -50,6 +50,9 @@
 .NavBar .icon {
     display: none;
 }
+.action{
+    margin-bottom: 100px;
+}
 .container-fluid{
     margin-top: 100px;
     padding-top: 20px;
@@ -107,11 +110,11 @@ img {
 .product-description{
     font-family: Montserrat, sans-serif;
     color: #f1edec;
-    font-size: 12px;
+    font-size: 13px;
 }
 .product-description span{
     font-family: Montserrat SemiBold, sans-serif;
-    font-size: 14px;
+    font-size: 15px;
 }
 .preview {
     display: -webkit-box;
