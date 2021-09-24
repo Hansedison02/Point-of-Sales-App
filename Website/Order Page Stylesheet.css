@@ -2,14 +2,7 @@
 {
     background-color: #18191d;
 }
-.bg-color2
-{
-    background-color: #282e33;
-    border-radius: 12px;
-}
-.bg-color3{
-    background: #435969;
-}
+
 
 .Logo
 {
@@ -31,6 +24,14 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+}
+.Font
+{
+    margin-top: 50px;
+    font-family: Montserrat SemiBold, sans-serif;
+    text-align: center;
+    color: #f1edec;
+    font-size: 50px;
 }
 
 .dropdown-menu{
@@ -56,14 +57,12 @@
 .container-fluid{
     margin-top: 100px;
     padding-top: 20px;
-    background-color: #282e33;
     border-radius: 12px;
     margin-bottom: 100px;
 }
 .product-title{
     color: #25dbca;
     font-family: Montserrat SemiBold, sans-serif;
-    background: #435969;
     padding-top: 20px;
 }
 .rating{
@@ -78,7 +77,6 @@ img {
     max-width: 100%; }
 .card{
 
-    border-radius: 12px;
 }
 
 .btn-info
@@ -110,7 +108,7 @@ img {
 .product-description{
     font-family: Montserrat, sans-serif;
     color: #f1edec;
-    font-size: 13px;
+    font-size: 20px;
 }
 .product-description span{
     font-family: Montserrat SemiBold, sans-serif;
