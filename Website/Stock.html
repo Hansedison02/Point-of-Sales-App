@@ -17,16 +17,23 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="Order%20Page%20Stylesheet.css">
+    <link rel="stylesheet" href="Stock%20Page%20Stylesheet.css">
     <script src=Responsive.js></script>
+    <script src="Sidebar.js"></script>
 </head>
 <body class="bg-color">
 <div class="Logo">
     <img src= Assets/Logo.png alt="Logo" class="responsive">
 </div>
+<div id="Sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a class="active">Stock</a>
+    <a href="#">History</a>
+    <a href="#">Reports</a>
+</div>
 <div class="NavBar" id="navBar">
     <a href="index.html">Home</a>
-    <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Product
+    <a class="dropdown-toggle" id="navbardrop" data-toggle="dropdown" >Product
         <div class="dropdown-menu">
             <a class="dropdown-item" href="HGProduct.html">Handgun</a>
             <a class="dropdown-item" href="RProduct.html">Rifle</a>
@@ -34,43 +41,48 @@
             <a class="dropdown-item" href="SMGProduct.html">Sub-Machine Gun</a>
         </div>
     </a>
-    <a class="active">Order</a>
+    <a href="Order.html">Order</a>
     <a href="About.html">About</a>
+    <button class="openbtn" onclick="openNav()">PoS</button>
+
     <a href="javascript:void(0);" class="icon" onclick="ResFunc()">
         <i class="fa fa-bars"></i>
     </a>
 </div>
-<h1 class="Font">HOW TO ORDER</h1>
-<div class="container bg-color">
-    <div class="container-fluid">
-        <div class="wrapper row">
-            <div class="preview col-md-6">
 
-                <div class="preview-pic tab-content">
-                    <div class="tab-pane active" id="pic-1"><img src="Assets/Payment.png" /></div>
-                </div>
+<div class="container">
+    <form>
+        <div class="row">
+                <label>Stock Name</label>
+                <input type="text" name="stockid" placeholder="Stock ID" style="margin-right: 20px; width: 25%">
+                <input type="text" name="stockname" placeholder="Stock Name" style="margin-right: 20px; width: 35% ">
+                <input type="text" name="stockqty" placeholder="Qty" style="margin-right: 20px; width: 10%">
+                <img src="Assets/GSIcon.png" style="width: 5%">
             </div>
-            <div class="preview col-md-6">
-                <p class="product-description">
-                    Contact the Bot via Telegram at <a href="https://t.me/Hanekawa118Bot">@Hanekawa118Bot.</a>
-                </p>
-                <p class="product-description">
-                    Follow the instructions.
-                </p>
-                <p class="product-description">
-                    Transfer the money within the time limit.
-                </p>
-                <p class="product-description">
-                     Wait for product to arrive.
-                </p>
-            </div>
+        <div class="row">
+            <label>Period Date</label>
+            <input type="date" name="pddate" placeholder="Date" style="margin-right: 20px; width: 25%">
         </div>
-    </div>
+        <div class="row">
+        <label>Assigned To</label>
+        <input type="Text" name="pid" placeholder="Person ID" style="margin-right: 20px; width: 25%">
+            <input type="Text" name="pname" placeholder="Person Name" style="margin-right: 20px; width: 35%">
+            <img src="Assets/GSIcon.png" style="width: 5%">
+        </div>
+        <div class="row">
+            <label>Required Qty</label>
+            <input type="number" name="qty" placeholder="Qty" style="margin-right: 20px; width: 10%">
+        </div>
+        <div class="row">
+            <input type="submit" value="Save" style="margin-top: 50px">
+        </div>
+    </form>
 </div>
 <footer class="Footer">
     <img src="Assets/IcyRaven.png" style="text-align: left; margin-right: 1200px; width: 5%">
     <img src="Assets/Logo1.png" style="text-align: right; width: 5%">
     <p>Copyright© Icy Raven Claw Foundation 2021. All Rights Reserved.</p>
 </footer>
+
 </body>
 </html>

@@ -3,7 +3,6 @@
     background-color: #18191d;
 }
 
-
 .Logo
 {
     display: block;
@@ -161,6 +160,17 @@ img {
         display: block;
         text-align: left;
     }
+    .Footer.responsive {position: relative;}
+    .Footer.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .Footer.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }
 .details {
     display: -webkit-box;
@@ -184,19 +194,6 @@ img {
     text-transform: UPPERCASE;
     font-weight: bold;
 }
-
-.checked, .price span
-{
-    color: #25dbca;
-    font-family: Comfortaa, sans-serif
-}
-
-.product-title, .rating, .product-description, .price, .vote, .sizes {
-    margin-bottom: 15px; }
-
-.product-title {
-    margin-top: 0; }
-
 
 
 .color {
