@@ -77,7 +77,6 @@ body {
 img {
     max-width: 100%; }
 .card{
-
     border-radius: 12px;
 }
 
@@ -126,6 +125,20 @@ img {
     flex-direction: column;
     -ms-flex-direction: column;
 }
+.Footer {
+    display: block;
+    padding-top: 20px;
+    width: 100%;
+    background-color: #282e33;
+    color: #f1edec;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+}
+.Footer p{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.Footer
 
 @media screen and (max-width: 996px) {
     .preview {

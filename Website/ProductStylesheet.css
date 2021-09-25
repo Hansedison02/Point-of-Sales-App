@@ -23,7 +23,21 @@
     width: 75%;
     height: auto;
 }
-
+.Footer {
+    display: block;
+    padding-top: 20px;
+    width: 100%;
+    background-color: #282e33;
+    color: #f1edec;
+    font-family: Montserrat, sans-serif;
+}
+.Footer p{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.Footer img{
+    margin-top: 20px;
+}
 .NavBar {
     background-color: #282e33;;
     font-family: Comfortaa, sans-serif;

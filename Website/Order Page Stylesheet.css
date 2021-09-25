@@ -28,7 +28,7 @@
 .Font
 {
     margin-top: 50px;
-    font-family: Montserrat SemiBold, sans-serif;
+    font-family: Comfortaa, sans-serif;
     text-align: center;
     color: #f1edec;
     font-size: 50px;
@@ -51,55 +51,17 @@
 .NavBar .icon {
     display: none;
 }
-.action{
-    margin-bottom: 100px;
-}
 .container-fluid{
     margin-top: 100px;
     padding-top: 20px;
     border-radius: 12px;
     margin-bottom: 100px;
 }
-.product-title{
-    color: #25dbca;
-    font-family: Montserrat SemiBold, sans-serif;
-    padding-top: 20px;
-}
-.rating{
-    color: #f1edec;
-    font-family: Montserrat SemiBold, sans-serif;
-    font-size: 17px;
-}
 body {
     font-family: Comfortaa, sans-serif; }
 
 img {
     max-width: 100%; }
-.card{
-
-}
-
-.btn-info
-{
-    background: #24d6c5;
-    border-radius: 6px;
-    -moz-border-radius:6px;
-    font-family: Comfortaa, sans-serif;
-    font-size: 20px;
-    position: relative;
-    color: #f1edec;
-    border:1px solid transparent;
-    transition: all 0.40s ease 0s;
-}
-.btn-info:after
-{
-    position: absolute;
-    right: 6px;
-    top: -4px;
-    opacity: 0;
-    color: #f5f5f5;
-    transition: all 0.40s ease 0s;
-}
 
 .price{
     font-family: Montserrat SemiBold, sans-serif;
@@ -110,10 +72,19 @@ img {
     color: #f1edec;
     font-size: 20px;
 }
-.product-description span{
-    font-family: Montserrat SemiBold, sans-serif;
-    font-size: 15px;
+
+.product-description a{
+    color: #f1edec;
 }
+
+.product-description a:hover{
+    color: #25dbca;
+}
+
+.preview-pic img{
+    border-radius: 12px;
+}
+
 .preview {
     display: -webkit-box;
     display: -webkit-flex;
@@ -124,27 +95,39 @@ img {
     flex-direction: column;
     -ms-flex-direction: column;
 }
-
-@media screen and (max-width: 996px) {
-    .preview {
-        margin-bottom: 20px; } }
+.Footer {
+    display: block;
+    width: 100%;
+    background-color: #282e33;
+    color: #f1edec;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+}
+.Footer img{
+    margin-top: 20px;
+}
+.Footer p{
+    text-align: center;
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 996px)
+{
+    .preview
+    {
+        margin-bottom: 20px;
+    }
+}
 
 .preview-pic {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
     flex-grow: 1; }
-.preview-thumbnail img{
-    width: 75%;
-    margin-right: 100px;
-    margin-top: 25px;
-    border-radius: 12px;
-}
 
 .tab-content {
     overflow: hidden; }
 .tab-content img {
-    width: 100%;
+    width: 70%;
     -webkit-animation-name: opacity;
     animation-name: opacity;
     -webkit-animation-duration: .3s;

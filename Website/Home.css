@@ -26,6 +26,16 @@ card a img:hover{
     color: #f1edec;
 }
 
+.Footer {
+    width: 100%;
+    background-color: #282e33;
+    color: #f1edec;
+    font-family: Montserrat, sans-serif;
+}
+.Footer p{
+    text-align: center;
+    padding-bottom: 20px;
+}
 .responsive {
     width:75%;
     height: auto;
