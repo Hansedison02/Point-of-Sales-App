@@ -2,7 +2,9 @@
 {
     background-color: #18191d;
 }
-
+.sidebar a:active{
+    background: #18191d;
+}
 .container{
     border-radius: 5px;
     background-color: #282e33;

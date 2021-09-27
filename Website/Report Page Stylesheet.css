@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 .sidebar a:active{
-    color: #18191d;
+    background: #18191d;
 }
 .row{
     font-size: 15px;
