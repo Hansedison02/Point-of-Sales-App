@@ -2,5 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="https:/github.com/Hansedison02/Point-of-Sales-App" vcs="Git" />
   </component>
 </project>
