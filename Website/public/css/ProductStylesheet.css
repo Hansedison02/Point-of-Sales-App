@@ -1,0 +1,230 @@
+.bg-color
+{
+    background-color: #18191d;
+}
+.NA
+{
+    margin-top: 60px;
+    color: #f1edec;
+    text-align: center;
+    font-size: 48px;
+    letter-spacing: 15px;
+    font-family: Montserrat SemiBold, sans-serif;
+}
+.Logo
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.responsive {
+    width: 75%;
+    height: auto;
+}
+.Footer {
+    display: block;
+    padding-top: 20px;
+    width: 100%;
+    background-color: #282e33;
+    color: #f1edec;
+    font-family: Montserrat, sans-serif;
+}
+.Footer p{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.Footer img{
+    margin-top: 20px;
+}
+.NavBar {
+    background-color: #282e33;;
+    font-family: Comfortaa, sans-serif;
+    overflow: hidden;
+}
+
+.NavBar a {
+    float: left;
+    color: #f1edec;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.dropdown-menu{
+    background-color: #282e33;
+    border-radius: 12px;
+}
+
+.NavBar a:hover {
+    background-color: #18191b;
+    color: #25dbca;
+}
+
+.NavBar a.active {
+    background-color: rgba(24, 25, 29, 0.7);
+    color: #25dbca;
+}
+.NavBar .icon {
+    display: none;
+}
+
+.Name
+{
+    color: #25dbca;
+}
+
+.ProductTable
+{
+    border: 1px solid #282e33;
+    border-radius:10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background: #282e33;
+    padding: 6px;
+}
+
+.ProductTable .Title
+{
+    border-radius: 0 8px 0 0;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 16px;
+    position: relative;
+    color: #25dbca;
+    font-family: Montserrat SemiBold, sans-serif;
+    background: #435969;
+}
+
+.ProductTable .Title h5 a span
+{
+    color: #f1edec;
+    display: block;
+    font-size: 13px
+}
+
+.ProductTable .Details
+{
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    color: #f5f5f5;
+    line-height: 20px;
+    padding: 10px 14px 16px 19px;
+    background: #435969;
+}
+
+.ProductTable .InfoPadding
+{
+    background: #435969;
+    border-radius: 0 0 8px 0;
+    padding: 11px 19px 10px 20px
+}
+
+
+.Title .Price
+{
+    font-size: 24px;
+    color: #24d6c5;
+    font-family: Comfortaa, sans-serif;
+    margin: 0;
+    font-weight: 300;
+}
+
+.Title .Price small
+{
+    font-size: 12px;
+}
+.btn-info
+{
+    background: #24d6c5;
+    border-radius: 6px;
+    -moz-border-radius:6px;
+    font-family: Comfortaa, sans-serif;
+    position: relative;
+    color: #f1edec;
+    border:1px solid transparent;
+    transition: all 0.40s ease 0s;
+}
+.btn-info:after
+{
+    content: "\f129";
+    font-family: fontawesome, sans-serif;
+    position: absolute;
+    right: 6px;
+    top: -4px;
+    opacity: 0;
+    color: #f5f5f5;
+    transition: all 0.40s ease 0s;
+}
+
+.btn-info:hover:after
+{
+    top:40%;
+    opacity: 5;
+}
+
+.btn-info span
+{
+    display: block;
+    transition: all 0.70s linear 0s;
+}
+
+.btn-info:hover span
+{
+    transform: translate(-9px);
+}
+
+
+@media only screen and (min-width:1024px) {
+    .ProductTable div[class*=col-md-4] {
+        padding-right: 0
+    }
+    .ProductTable div[class*=col-md-8] {
+        padding: 0 13px 0 0
+    }
+    .prod-wrap div[class*=col-md-5] {
+        padding-right: 0
+    }
+    .prod-wrap div[class*=col-md-7] {
+        padding: 0 13px 0 0
+    }
+    .ProductTable .InfoPadding {
+        position: relative
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .NavBar a:not(:first-child) {display: none;}
+    .NavBar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .NavBar.responsive {position: relative;}
+    .NavBar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .NavBar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .Footer.responsive {position: relative;}
+    .Footer.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .Footer.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}

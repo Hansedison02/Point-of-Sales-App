@@ -1,0 +1,231 @@
+.bg-color
+{
+    background-color: #18191d;
+}
+
+.Logo
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.NavBar {
+    background-color: #282e33;
+    font-family: Comfortaa, sans-serif;
+    overflow: hidden;
+}
+
+.NavBar a {
+    float: left;
+    color: #f1edec;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.Font
+{
+    margin-top: 50px;
+    font-family: Comfortaa, sans-serif;
+    text-align: center;
+    color: #f1edec;
+    font-size: 50px;
+    letter-spacing: 15px;
+}
+
+.dropdown-menu{
+    background-color: #282e33;
+    border-radius: 12px;
+}
+
+.NavBar a:hover {
+    background-color: #18191b;
+    color: #25dbca;
+}
+
+.NavBar a.active {
+    background-color: rgba(24, 25, 29, 0.7);
+    color: #25dbca;
+}
+.NavBar .icon {
+    display: none;
+}
+.container-fluid{
+    margin-top: 100px;
+    padding-top: 20px;
+    border-radius: 12px;
+    margin-bottom: 100px;
+}
+body {
+    font-family: Comfortaa, sans-serif; }
+
+img {
+    max-width: 100%; }
+
+.price{
+    font-family: Montserrat SemiBold, sans-serif;
+    color: #f1edec;
+}
+.product-description{
+    font-family: Montserrat, sans-serif;
+    color: #f1edec;
+    font-size: 20px;
+}
+
+.product-description a{
+    color: #f1edec;
+}
+
+.product-description a:hover{
+    color: #25dbca;
+}
+
+.preview-pic img{
+    border-radius: 12px;
+}
+
+.preview {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -ms-flex-direction: column;
+}
+.Footer {
+    display: block;
+    width: 100%;
+    background-color: #282e33;
+    color: #f1edec;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+}
+.Footer img{
+    margin-top: 20px;
+}
+.Footer p{
+    text-align: center;
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 996px)
+{
+    .preview
+    {
+        margin-bottom: 20px;
+    }
+}
+
+.preview-pic {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1; }
+
+.tab-content {
+    overflow: hidden; }
+.tab-content img {
+    width: 70%;
+    -webkit-animation-name: opacity;
+    animation-name: opacity;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s; }
+
+@media screen and (min-width: 997px) {
+    .wrapper {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; } }
+@media screen and (max-width: 600px) {
+    .NavBar a:not(:first-child) {display: none;}
+    .NavBar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .NavBar.responsive {position: relative;}
+    .NavBar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .NavBar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .Footer.responsive {position: relative;}
+    .Footer.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .Footer.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+.details {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+
+.colors {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1; }
+
+.product-title, .price, .sizes, .colors
+{
+    text-transform: UPPERCASE;
+    font-weight: bold;
+}
+
+
+.color {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    height: 2em;
+    width: 2em;
+    border-radius: 2px; }
+.color:first-of-type {
+    margin-left: 20px; }
+
+
+.tooltip-inner {
+    padding: 1.3em; }
+
+@-webkit-keyframes opacity {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(3);
+        transform: scale(3); }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1); } }
+
+@keyframes opacity {
+    0% {
+opacity: 0;
+-webkit-transform: scale(3);
+transform: scale(3); }
+100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }

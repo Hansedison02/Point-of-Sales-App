@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Page</title>
+    <link rel="shortcut icon" href="Assets/Logo2.ico"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Stock%20Page%20Stylesheet.css">
+    <script src=js/Responsive.js></script>
+    <script src="Sidebar.js"></script>
+</head>
+<body class="bg-color">
+<div class="Logo">
+    <img src= Assets/Logo.png alt="Logo" class="responsive">
+</div>
+<div id="Sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a class="active">Stock</a>
+    <a href="History">History</a>
+    <a href="Report">Reports</a>
+</div>
+<div class="NavBar" id="navBar">
+    <a href="index">Home</a>
+    <a class="dropdown-toggle" id="navbardrop" data-toggle="dropdown" >Product
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="HGProduct">Handgun</a>
+            <a class="dropdown-item" href="RProduct">Rifle</a>
+            <a class="dropdown-item" href="ARProduct">Assault Rifle</a>
+            <a class="dropdown-item" href="SMGProduct">Sub-Machine Gun</a>
+        </div>
+    </a>
+    <a href="Order">Order</a>
+    <a href="About">About</a>
+    <button class="openbtn" onclick="openNav()">PoS</button>
+
+    <a href="javascript:void(0);" class="icon" onclick="ResFunc()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<div class="container">
+<table class="Table" id="customers">
+    <tr>
+        <th>#</th>
+        <th>Stock ID</th>
+        <th>Stock Name</th>
+        <th>Qty</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>AR0001</td>
+        <td>USS M14</td>
+        <td>413</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>AR0002</td>
+        <td>FAMAS</td>
+        <td>259</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>AR0003</td>
+        <td>SIG Sauer MCX Virtus SBR</td>
+        <td>133</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>AR0004</td>
+        <td>SIG SG-550</td>
+        <td>047</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>AR0005</td>
+        <td>AK-47 Mini Draco Full Upgrade</td>
+        <td>011</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>AR0006</td>
+        <td>AK-103</td>
+        <td>019</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>AR0007</td>
+        <td>Howa Type-64</td>
+        <td>006</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>AR0008</td>
+        <td>Howa Type-89</td>
+        <td>107</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>AR0009</td>
+        <td>Howa Type-20</td>
+        <td>005</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>AR0010</td>
+        <td>FN-SCAR</td>
+        <td>029</td>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>AR0011</td>
+        <td>Heckler & Koch HK-416</td>
+        <td>011</td>
+    </tr>
+    <tr>
+        <td>12</td>
+        <td>AR0012</td>
+        <td>Heckler & Koch G-36</td>
+        <td>177</td>
+    </tr>
+</table>
+</div>
+<footer class="Footer">
+    <img src="Assets/IcyRaven.png" style="text-align: left; margin-right: 1200px; width: 5%">
+    <img src="Assets/Logo1.png" style="text-align: right; width: 5%">
+    <p>Copyright© Icy Raven Claw Foundation 2021. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

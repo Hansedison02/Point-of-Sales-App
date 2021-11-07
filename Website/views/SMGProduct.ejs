@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sub-Machine Gun Product List</title>
+    <link rel="shortcut icon" href="Assets/Logo2.ico"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/ProductStylesheet.css">
+    <script src=js/Responsive.js></script>
+</head>
+
+<div class="Logo">
+    <img src= Assets/Logo.png alt="Logo" class="responsive">
+</div>
+<body class="bg-color">
+<div class="NavBar" id="navBar">
+    <a href="index">Home</a>
+    <a class="active dropdown-toggle" id="navbardrop" data-toggle="dropdown">Product
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="HGProduct">Handgun</a>
+            <a class="dropdown-item" href="RProduct">Rifle</a>
+            <a class="dropdown-item" href="ARProduct">Assault Rifle</a>
+            <a class="active dropdown-item">Sub-Machine Gun</a>
+        </div>
+    </a>
+    <a href="Order">Order</a>
+    <a href="About">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="ResFunc()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+<div class="container">
+    <div class="col-xs-12 col-md-6">
+        <div class="ProductTable prod-wrap">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="Image">
+                        <img src="Assets/H&KMP5.png" alt="H&KMP5" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                    <div class="Title">
+                        <h5 class="Name">
+                                Heckler & Koch MP5
+                            <a>
+                                <span>Sub-Machine Gun</span>
+                            </a>
+                        </h5>
+                        <p class="Price">
+                            <span>$221</span>
+                        </p>
+                    </div>
+                    <div class="Details">
+                        <p>Perfect Sub-Machine Gun for Indoor DeathMatch.</p>
+                    </div>
+                    <div class="InfoPadding">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="HKMP5Detail" class="btn btn-info"><span>DETAILS</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <div class="ProductTable prod-wrap">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="Image">
+                        <img src="Assets/H&KUMP.png" alt="H&KUMP" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                    <div class="Title">
+                        <h5 class="Name">
+                            Heckler & Koch UMP
+                            <a><span>Sub-Machine Gun</span></a>
+                        </h5>
+                        <p class="Price">
+                            <span>$180</span>
+                        </p>
+                    </div>
+                    <div class="Details">
+                        <p>Newer but less strong than the MP5, for PDW.</p>
+                    </div>
+                    <div class="InfoPadding">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="HKUMPDetail" class="btn btn-info"><span>DETAILS</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <div class="ProductTable prod-wrap">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="Image">
+                        <img src="Assets/H&KMP7.png" alt="H&KMP7" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                    <div class="Title">
+                        <h5 class="Name">
+                            Heckler & Koch MP7
+                            <a><span>Sub-Machine Gun</span></a>
+                        </h5>
+                        <p class="Price">
+                            <span>$241</span>
+                        </p>
+                    </div>
+                    <div class="Details">
+                        <p>Machine Gun with less weight than it's ancestor, for PDW.</p>
+                    </div>
+                    <div class="InfoPadding">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="HKMP7Detail" class="btn btn-info"><span>DETAILS</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <div class="ProductTable prod-wrap">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="Image">
+                        <img src="Assets/FNP90.png" alt="FNP90" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                    <div class="Title">
+                        <h5 class="Name">
+                            FN P-90
+                            <a>
+                                <span>Sub-Machine Gun</span>
+                            </a>
+                        </h5>
+                        <p class="Price">
+                            <span>$325</span>
+                        </p>
+                    </div>
+                    <div class="Details">
+                        <p>Been around in the Asian market but limited due to licensing issues.</p>
+                    </div>
+                    <div class="InfoPadding">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="FNP90Detail" class="btn btn-info"><span>DETAILS</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <div class="ProductTable prod-wrap">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="Image">
+                        <img src="Assets/CZSEVO3.png" alt="Scorpion3" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                    <div class="Title">
+                        <h5 class="Name">
+                            CZ Scorpion Evo-3 A1
+                            <a>
+                                <span>Sub-Machine Gun</span>
+                            </a>
+                        </h5>
+                        <p class="Price">
+                            <span>$450</span>
+                        </p>
+                    </div>
+                    <div class="Details">
+                        <p>Experience the EVO 3 Like a real gun. Equipped with BET Carbine.</p>
+                    </div>
+                    <div class="InfoPadding">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="CZSEVO3Detail" class="btn btn-info"><span>DETAILS</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <div class="ProductTable prod-wrap">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="Image">
+                        <img src="Assets/MP40.png" alt="MP40" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                    <div class="Title">
+                        <h5 class="Name">
+                            MP-40
+                            <a>
+                                <span>Sub-Machine Gun</span>
+                            </a>
+                        </h5>
+                        <p class="Price">
+                            <span>$300</span>
+                        </p>
+                    </div>
+                    <div class="Details">
+                        <p>The realistic replica of the famous WW2 SMG made by Umarex.</p>
+                    </div>
+                    <div class="InfoPadding">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="MP40Detail" class="btn btn-info"><span>DETAILS</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <div class="ProductTable prod-wrap">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="Image">
+                        <img src="Assets/KrissSVD.png" alt="KSVD" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                    <div class="Title">
+                        <h5 class="Name">
+                            Kriss SVD
+                            <a><span>Sub-Machine Gun</span></a>
+                        </h5>
+                        <p class="Price">
+                            <span>$255</span>
+                        </p>
+                    </div>
+                    <div class="Details">
+                        <p>This flexible lightweight Sub-Machine Gun also made us easier to Dash.</p>
+                    </div>
+                    <div class="InfoPadding">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="KSVDDetail" class="btn btn-info"><span>DETAILS</span></a>
+                            </div>
+                            <div class="col-md-12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <div class="ProductTable prod-wrap">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="Image">
+                        <img src="Assets/KrissV.png" alt="KV" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                    <div class="Title">
+                        <h5 class="Name">
+                            Kriss Vector
+                            <a><span>Sub-Machine Gun</span></a>
+                        </h5>
+                        <p class="Price">
+                            <span>$355</span>
+                        </p>
+                    </div>
+                    <div class="Details">
+                        <p>Improvement of Kriss SVD Sub-Machine Gun.</p>
+                    </div>
+                    <div class="InfoPadding">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="KVDetail" class="btn btn-info"><span>DETAILS</span></a>
+                            </div>
+                            <div class="col-md-12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="Footer">
+    <img src="Assets/IcyRaven.png" style="text-align: left; margin-right: 1200px; width: 5%">
+    <img src="Assets/Logo1.png" style="text-align: right; width: 5%">
+    <p>Copyright© Icy Raven Claw Foundation 2021. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "point-of-sales-app",
+  "version": "1.0.0",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.14"
+  },
+  "description": "Point of sales repository for Mid-Term Test",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/Takahashi18/Point-of-Sales-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Takahashi18/Point-of-Sales-App/issues"
+  },
+  "homepage": "https://gitlab.com/Takahashi18/Point-of-Sales-App#readme"
+}
