@@ -24,18 +24,19 @@
 <div class="Logo">
     <img src= ../../Assets/Logo.png alt="Logo" class="responsive">
 </div>
+<%- include('../layouts/navbar.ejs'); %>
 <div class="NavBar" id="navBar">
-    <a href="index.ejs">Home</a>
+    <a href="/">Home</a>
     <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Product
         <div class="dropdown-menu">
-            <a class="dropdown-item" href="HGProduct.ejs">Handgun</a>
+            <a class="dropdown-item" href="/HGProduct">Handgun</a>
             <a class="dropdown-item" href="RProduct.ejs">Rifle</a>
             <a class="dropdown-item" href="ARProduct.ejs">Assault Rifle</a>
             <a class="dropdown-item" href="SMGProduct.ejs">Sub-Machine Gun</a>
         </div>
     </a>
     <a class="active">Order</a>
-    <a href="About.ejs">About</a>
+    <a href="/about">About</a>
     <a href="javascript:void(0);" class="icon" onclick="ResFunc()">
         <i class="fa fa-bars"></i>
     </a>

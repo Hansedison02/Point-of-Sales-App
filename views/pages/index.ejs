@@ -28,30 +28,7 @@
     <img src= ../../Assets/Logo.png alt="Logo" class="responsive">
 </div>
 <body class="bg-color">
-<div id="Sidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="Stock.ejs">Stock</a>
-    <a href="History.ejs">History</a>
-    <a href="Report.ejs">Reports</a>
-</div>
-<div class="NavBar" id="navBar">
-    <a class="active">Home</a>
-    <a class="dropdown-toggle" id="navbardrop" data-toggle="dropdown" >Product
-        <div class="dropdown-menu">
-            <a class="dropdown-item" href="HGProduct.ejs">Handgun</a>
-            <a class="dropdown-item" href="RProduct.ejs">Rifle</a>
-            <a class="dropdown-item" href="ARProduct.ejs">Assault Rifle</a>
-            <a class="dropdown-item" href="SMGProduct.ejs">Sub-Machine Gun</a>
-        </div>
-    </a>
-    <a href="Order.ejs">Order</a>
-    <a href="About.ejs">About</a>
-    <button class="openbtn" onclick="openNav()">PoS</button>
-
-    <a href="javascript:void(0);" class="icon" onclick="ResFunc()">
-        <i class="fa fa-bars"></i>
-    </a>
-</div>
+<%- include('../layouts/navbar.ejs'); %>
 <h1 class="NA">NEW ARRIVAL</h1>
 <div class="container">
     <div id="ASCarousel" class="carousel slide">
