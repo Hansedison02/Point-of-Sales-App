@@ -1,6 +1,0 @@
-{
-    "require": {
-        "kartik-v/yii2-widget-datetimepicker": "*",
-        "kartik-v/yii2-mpdf": "dev-master"
-    }
-}
