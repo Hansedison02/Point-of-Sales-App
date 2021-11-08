@@ -1,50 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="shortcut icon" href="../../Assets/Logo2.ico"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Montserrat:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="../../css/Home.css">
-    <link rel="stylesheet" href="../../css/Carousel.css">
-    <link rel="stylesheet" href="../../css/Card.css">
-    <script src="../../js/Responsive.js"></script>
-    <script src="../../js/Carousel.js"></script>
-    <script src="../../js/Sidebar.js"></script>
-</head>
+ <link rel="stylesheet" href="../../css/NavBar.css">
     <div id="Sidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="Stock.ejs">Stock</a>
-        <a href="History.ejs">History</a>
-        <a href="Report.ejs">Reports</a>
+        <a class="NavItem" href="Stock.ejs">Stock</a>
+        <a class="NavItem" href="History.ejs">History</a>
+        <a class="NavItem" href="Report.ejs">Reports</a>
     </div>
-    <div class="NavBar" id="navBar">
-        <a class="active">Home</a>
-        <a class="dropdown-toggle" id="navbardrop" data-toggle="dropdown" >Product
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="/HGProduct">Handgun</a>
-                <a class="dropdown-item" href="/RProduct.ejs">Rifle</a>
-                <a class="dropdown-item" href="/ARProduct.ejs">Assault Rifle</a>
-                <a class="dropdown-item" href="/SMGProduct.ejs">Sub-Machine Gun</a>
-            </div>
-        </a>
-        <a href="/Order">Order</a>
-        <a href="/about">About</a>
-        <button class="openbtn" onclick="openNav()">PoS</button>
+<div class="NavBar" id="navBar">
+            <a class="NavItem active" href="/">Home</a>
+            <a class="nav-link dropdown-toggle NavItem" id="navbardrop" data-toggle="dropdown">Product
+                <div class="dropdown-menu">
+                    <a class="dropdown-item NavItem" href="/HGProduct">Handgun</a>
+                    <a class="dropdown-item NavItem" href="/RProduct">Rifle</a>
+                    <a class="dropdown-item NavItem" href="/ARProduct">Assault Rifle</a>
+                    <a class="dropdown-item NavItem" href="/SMGProduct">Sub-Machine Gun</a>
+                </div>
+            </a>
+            <a class="NavItem" href="/Order">Order</a>
+            <a class="NavItem" href="/about">About</a>
+            <button class="openbtn" onclick="openNav()">PoS</button>
+            <a href="javascript:void(0);" class="icon" onclick="ResFunc()">
+                <i class="fa fa-bars"></i>
+            </a>
+    </div>
 
-        <a href="javascript:void(0);" class="icon" onclick="ResFunc()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-</html>
+ <script>
+     $(document).ready(function () {
+
+         $('div.NavBar > a.NavItem')
+             .click(function (e) {
+                 $('div.NavBar > a.NavItem')
+                     .removeClass('active');
+                 $(this).addClass('active');
+             });
+     });
+ </script>

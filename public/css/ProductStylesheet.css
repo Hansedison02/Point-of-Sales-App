@@ -38,38 +38,6 @@
 .Footer img{
     margin-top: 20px;
 }
-.NavBar {
-    background-color: #282e33;;
-    font-family: Comfortaa, sans-serif;
-    overflow: hidden;
-}
-
-.NavBar a {
-    float: left;
-    color: #f1edec;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.dropdown-menu{
-    background-color: #282e33;
-    border-radius: 12px;
-}
-
-.NavBar a:hover {
-    background-color: #18191b;
-    color: #25dbca;
-}
-
-.NavBar a.active {
-    background-color: rgba(24, 25, 29, 0.7);
-    color: #25dbca;
-}
-.NavBar .icon {
-    display: none;
-}
 
 .Name
 {

@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="../../css/NavBar.css">
+<div class="NavBar" id="navBar">
+    <a class="NavItem active" href="/">Home</a>
+    <a class="nav-link dropdown-toggle NavItem" id="navbardrop" data-toggle="dropdown">Product
+        <div class="dropdown-menu">
+            <a class="dropdown-item NavItem" href="/HGProduct">Handgun</a>
+            <a class="dropdown-item NavItem" href="/RProduct">Rifle</a>
+            <a class="dropdown-item NavItem" href="/ARProduct">Assault Rifle</a>
+            <a class="dropdown-item NavItem" href="/SMGProduct">Sub-Machine Gun</a>
+        </div>
+    </a>
+    <a class="NavItem" href="/Order">Order</a>
+    <a class="NavItem" href="/about">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="ResFunc()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<script>
+    $(document).ready(function () {
+
+        $('div.NavBar > a.NavItem')
+            .click(function (e) {
+                $('div.NavBar > a.NavItem')
+                    .removeClass('active');
+                $(this).addClass('active');
+            });
+    });
+</script>
