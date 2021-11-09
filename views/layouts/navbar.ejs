@@ -1,13 +1,15 @@
  <link rel="stylesheet" href="../../css/NavBar.css">
     <div id="Sidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a class="NavItem" href="Stock.ejs">Stock</a>
-        <a class="NavItem" href="History.ejs">History</a>
-        <a class="NavItem" href="Report.ejs">Reports</a>
+        <a class="NavItem" href="/Stock">Stock</a>
+        <a class="NavItem" href="/History">History</a>
+        <a class="NavItem" href="/Report">Reports</a>
     </div>
 <div class="NavBar" id="navBar">
-            <a class="NavItem active" href="/">Home</a>
-            <a class="nav-link dropdown-toggle NavItem" id="navbardrop" data-toggle="dropdown">Product
+    <% var state;%>
+    <% var type;%>
+            <a <% if(state === "Home") { %> class="active" <% } %> class="NavItem" href="/">Home</a>
+            <a <% if(state === "product") { %> class="active" <% } %> class="nav-link dropdown-toggle NavItem" id="navbardrop" data-toggle="dropdown">Product
                 <div class="dropdown-menu">
                     <a class="dropdown-item NavItem" href="/HGProduct">Handgun</a>
                     <a class="dropdown-item NavItem" href="/RProduct">Rifle</a>
@@ -15,22 +17,12 @@
                     <a class="dropdown-item NavItem" href="/SMGProduct">Sub-Machine Gun</a>
                 </div>
             </a>
-            <a class="NavItem" href="/Order">Order</a>
-            <a class="NavItem" href="/about">About</a>
+            <a <% if(state === "Order") { %> class="active" <% } %> class="NavItem" href="/Order">Order</a>
+            <a <% if(state === "About") { %> class="active" <% } %>class="NavItem" href="/about">About</a>
+    <% if(type === "V1") { %>
             <button class="openbtn" onclick="openNav()">PoS</button>
+    <% } %>
             <a href="javascript:void(0);" class="icon" onclick="ResFunc()">
                 <i class="fa fa-bars"></i>
             </a>
     </div>
-
- <script>
-     $(document).ready(function () {
-
-         $('div.NavBar > a.NavItem')
-             .click(function (e) {
-                 $('div.NavBar > a.NavItem')
-                     .removeClass('active');
-                 $(this).addClass('active');
-             });
-     });
- </script>
