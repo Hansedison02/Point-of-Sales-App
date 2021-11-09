@@ -29,5 +29,15 @@ router.get(('/Order'), (req, res) => {
 router.get(('/about'), (req, res) => {
     res.render('pages/about')
 })
+router.get(('/Stock'), (req, res) => {
+    res.render('pages/Stock')
+})
+router.get(('/History'), (req, res) => {
+    res.render('pages/History')
+})
+router.get(('/Report'), (req, res) => {
+    res.render('pages/Report')
+})
+
 
 module.exports = router;

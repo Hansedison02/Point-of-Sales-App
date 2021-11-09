@@ -3,20 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Stock Page</title>
-    <link rel="shortcut icon" href="../../Assets/Logo2.ico"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Montserrat:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <%- include('../layouts/header.ejs'); %>
     <link rel="stylesheet" href="../../css/Stock%20Page%20Stylesheet.css">
     <script src=../../js/Responsive.js></script>
     <script src="../../js/Sidebar.js"></script>
@@ -25,31 +12,7 @@
 <div class="Logo">
     <img src= ../../Assets/Logo.png alt="Logo" class="responsive">
 </div>
-<div id="Sidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a class="active">Stock</a>
-    <a href="History.ejs">History</a>
-    <a href="Report.ejs">Reports</a>
-</div>
-<div class="NavBar" id="navBar">
-    <a href="index.ejs">Home</a>
-    <a class="dropdown-toggle" id="navbardrop" data-toggle="dropdown" >Product
-        <div class="dropdown-menu">
-            <a class="dropdown-item" href="HGProduct.ejs">Handgun</a>
-            <a class="dropdown-item" href="RProduct.ejs">Rifle</a>
-            <a class="dropdown-item" href="ARProduct.ejs">Assault Rifle</a>
-            <a class="dropdown-item" href="SMGProduct.ejs">Sub-Machine Gun</a>
-        </div>
-    </a>
-    <a href="Order.ejs">Order</a>
-    <a href="about.ejs">About</a>
-    <button class="openbtn" onclick="openNav()">PoS</button>
-
-    <a href="javascript:void(0);" class="icon" onclick="ResFunc()">
-        <i class="fa fa-bars"></i>
-    </a>
-</div>
-
+<%- include('../layouts/navbar.ejs', {type: 'V1'}); %>
 <div class="container">
 <table class="Table" id="customers">
     <tr>
@@ -132,11 +95,6 @@
     </tr>
 </table>
 </div>
-<footer class="Footer">
-    <img src="../../Assets/IcyRaven.png" style="text-align: left; margin-right: 1200px; width: 5%">
-    <img src="../../Assets/Logo1.png" style="text-align: right; width: 5%">
-    <p>Copyright© Icy Raven Claw Foundation 2021. All Rights Reserved.</p>
-</footer>
-
+<%- include('../layouts/footer.ejs'); %>
 </body>
 </html>
