@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rifle Product List</title>
+    <link rel="shortcut icon" href="Assets/Logo2.ico"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/ProductStylesheet.css">
+    <script src=js/Responsive.js></script>
+</head>
+
+<div class="Logo">
+    <img src= Assets/Logo.png alt="Logo" class="responsive">
+</div>
+<body class="bg-color">
+<div class="NavBar" id="navBar">
+    <a href="index">Home</a>
+    <a class="active nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Product
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="HGProduct">Handgun</a>
+            <a class="active dropdown-item">Rifle</a>
+            <a class="dropdown-item" href="ARProduct">Assault Rifle</a>
+            <a class="dropdown-item" href="SMGProduct">Sub-Machine Gun</a>
+        </div>
+    </a>
+    <a href="Order">Order</a>
+    <a href="About">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="ResFunc()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+<div class="container">
+    <div class="col-xs-12 col-md-6">
+        <div class="ProductTable prod-wrap">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="Image">
+                        <img src="Assets/EMK3.png" alt="EMK3" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                    <div class="Title">
+                        <h5 class="Name">
+                                Enfield Mk-3
+                            <a>
+                                <span>Rifle</span>
+                            </a>
+                        </h5>
+                        <p class="Price">
+                            <span>$121</span>
+                        </p>
+                    </div>
+                    <div class="Details">
+                        <p>A replica of the rifle used by British Forces during WW2.</p>
+                    </div>
+                    <div class="InfoPadding">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="EMK3Detail" class="btn btn-info"><span>DETAILS</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <div class="ProductTable prod-wrap">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="Image">
+                        <img src="Assets/FR%20F2.png" alt="FR-F2" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                    <div class="Title">
+                        <h5 class="Name">
+                                FR-F2
+                            <a><span>Sniper Rifle</span></a>
+                        </h5>
+                        <p class="Price">
+                            <span>$231</span>
+                        </p>
+                    </div>
+                    <div class="Details">
+                        <p>Used by French snipers, Awesome stability and high FPS.</p>
+                    </div>
+                    <div class="InfoPadding">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="FRF2Detail" class="btn btn-info"><span>DETAILS</span></a>
+                            </div>
+                            <div class="col-md-12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <div class="ProductTable prod-wrap">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="Image">
+                        <img src="Assets/Krag-Jorgensen.png" alt="Krag-Jorgensen" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                    <div class="Title">
+                        <h5 class="Name">
+                            Krag-Jørgensen
+                            <a><span>Rifle</span></a>
+                        </h5>
+                        <p class="Price">
+                            <span>$255</span>
+                        </p>
+                    </div>
+                    <div class="Details">
+                        <p>A rifle known for its lightweight and fits for user with light body.</p>
+                    </div>
+                    <div class="InfoPadding">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="KJDetail" class="btn btn-info"><span>DETAILS</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <div class="ProductTable prod-wrap">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="Image">
+                        <img src="Assets/A38.png" alt="Arisaka type-38" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                    <div class="Title">
+                        <h5 class="Name">
+                            Arisaka Type-38
+                            <a>
+                                <span>Rifle</span>
+                            </a>
+                        </h5>
+                        <p class="Price">
+                            <span>$220</span>
+                        </p>
+                    </div>
+                    <div class="Details">
+                        <p>Used by WW2 Japanese soldiers, famous and deadly.</p>
+                    </div>
+                    <div class="InfoPadding">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="A38Detail" class="btn btn-info"><span>DETAILS</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <div class="ProductTable prod-wrap">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="Image">
+                        <img src="Assets/M110K1.png" alt="M110K1" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                    <div class="Title">
+                        <h5 class="Name">
+                            M110-K1
+                            <a>
+                                <span>Sniper Rifle</span>
+                            </a>
+                        </h5>
+                        <p class="Price">
+                            <span>$255</span>
+                        </p>
+                    </div>
+                    <div class="Details">
+                        <p>American nowadays favorite Sniper Rifle. High accuracy and showcased at RE:Village.</p>
+                    </div>
+                    <div class="InfoPadding">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="M110K1Detail" class="btn btn-info"><span>DETAILS</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <div class="ProductTable prod-wrap">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="Image">
+                        <img src="Assets/Mosin%20Nagant.png" alt="Mosin Nagant" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                    <div class="Title">
+                        <h5 class="Name">
+                            Mosin Nagant
+                            <a>
+                                <span>Rifle</span>
+                            </a>
+                        </h5>
+                        <p class="Price">
+                            <span>$212</span>
+                        </p>
+                    </div>
+                    <div class="Details">
+                        <p>Remember the Finland special Forces White Death? They use this gun for victory.</p>
+                    </div>
+                    <div class="InfoPadding">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="MNDetail" class="btn btn-info"><span>DETAILS</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="Footer">
+    <img src="Assets/IcyRaven.png" style="text-align: left; margin-right: 1200px; width: 5%">
+    <img src="Assets/Logo1.png" style="text-align: right; width: 5%">
+    <p>Copyright© Icy Raven Claw Foundation 2021. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
