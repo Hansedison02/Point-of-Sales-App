@@ -284,7 +284,7 @@ const products = [
         price: 325,
         detail: 'Tired of using the 416 and having more funds? Try this out.',
         urlink: 'HKG36Detail.ejs'
-    }),
+    })
 
 ]
 
