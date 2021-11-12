@@ -14,34 +14,35 @@
 </div>
 <body class="bg-color">
 <%- include('../layouts/navbar.ejs', {state: 'product'}); %>
+<% products.forEach((product) => { %>
 <div class="container">
     <div class="col-xs-12 col-md-6">
         <div class="ProductTable prod-wrap">
             <div class="row">
                 <div class="col-md-5 col-sm-12 col-xs-12">
                     <div class="Image">
-                        <img src="../../Assets/EMK3.png" alt="EMK3" class="img-responsive">
+                        <img src="<%= product.imagePath%>>" alt="EMK3" class="img-responsive">
                     </div>
                 </div>
                 <div class="col-md-7 col-sm-12 col-xs-12">
                     <div class="Title">
                         <h5 class="Name">
-                                Enfield Mk-3
+                            <%= product.name%>
                             <a>
-                                <span>Rifle</span>
+                                <span><%= product.type%></span>
                             </a>
                         </h5>
                         <p class="Price">
-                            <span>$121</span>
+                            <span>$<%= product.price%></span>
                         </p>
                     </div>
                     <div class="Details">
-                        <p>A replica of the rifle used by British Forces during WW2.</p>
+                        <p><%= product.detail%></p>
                     </div>
                     <div class="InfoPadding">
                         <div class="row">
                             <div class="col-md-12">
-                                <a href="EMK3Detail.ejs" class="btn btn-info"><span>DETAILS</span></a>
+                                <a href="<%= product.urlink%>" class="btn btn-info"><span>DETAILS</span></a>
                             </div>
                         </div>
                     </div>
@@ -49,174 +50,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xs-12 col-md-6">
-        <div class="ProductTable prod-wrap">
-            <div class="row">
-                <div class="col-md-5 col-sm-12 col-xs-12">
-                    <div class="Image">
-                        <img src="../../Assets/FR%20F2.png" alt="FR-F2" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-7 col-sm-12 col-xs-12">
-                    <div class="Title">
-                        <h5 class="Name">
-                                FR-F2
-                            <a><span>Sniper Rifle</span></a>
-                        </h5>
-                        <p class="Price">
-                            <span>$231</span>
-                        </p>
-                    </div>
-                    <div class="Details">
-                        <p>Used by French snipers, Awesome stability and high FPS.</p>
-                    </div>
-                    <div class="InfoPadding">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a href="FRF2Detail.ejs" class="btn btn-info"><span>DETAILS</span></a>
-                            </div>
-                            <div class="col-md-12">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-12 col-md-6">
-        <div class="ProductTable prod-wrap">
-            <div class="row">
-                <div class="col-md-5 col-sm-12 col-xs-12">
-                    <div class="Image">
-                        <img src="../../Assets/Krag-Jorgensen.png" alt="Krag-Jorgensen" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-7 col-sm-12 col-xs-12">
-                    <div class="Title">
-                        <h5 class="Name">
-                            Krag-Jørgensen
-                            <a><span>Rifle</span></a>
-                        </h5>
-                        <p class="Price">
-                            <span>$255</span>
-                        </p>
-                    </div>
-                    <div class="Details">
-                        <p>A rifle known for its lightweight and fits for user with light body.</p>
-                    </div>
-                    <div class="InfoPadding">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a href="KJDetail.ejs" class="btn btn-info"><span>DETAILS</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-12 col-md-6">
-        <div class="ProductTable prod-wrap">
-            <div class="row">
-                <div class="col-md-5 col-sm-12 col-xs-12">
-                    <div class="Image">
-                        <img src="../../Assets/A38.png" alt="Arisaka type-38" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-7 col-sm-12 col-xs-12">
-                    <div class="Title">
-                        <h5 class="Name">
-                            Arisaka Type-38
-                            <a>
-                                <span>Rifle</span>
-                            </a>
-                        </h5>
-                        <p class="Price">
-                            <span>$220</span>
-                        </p>
-                    </div>
-                    <div class="Details">
-                        <p>Used by WW2 Japanese soldiers, famous and deadly.</p>
-                    </div>
-                    <div class="InfoPadding">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a href="/RProduct/Arisaka38" class="btn btn-info"><span>DETAILS</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-12 col-md-6">
-        <div class="ProductTable prod-wrap">
-            <div class="row">
-                <div class="col-md-5 col-sm-12 col-xs-12">
-                    <div class="Image">
-                        <img src="../../Assets/M110K1.png" alt="M110K1" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-7 col-sm-12 col-xs-12">
-                    <div class="Title">
-                        <h5 class="Name">
-                            M110-K1
-                            <a>
-                                <span>Sniper Rifle</span>
-                            </a>
-                        </h5>
-                        <p class="Price">
-                            <span>$255</span>
-                        </p>
-                    </div>
-                    <div class="Details">
-                        <p>American nowadays favorite Sniper Rifle. High accuracy and showcased at RE:Village.</p>
-                    </div>
-                    <div class="InfoPadding">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a href="M110K1Detail.ejs" class="btn btn-info"><span>DETAILS</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-12 col-md-6">
-        <div class="ProductTable prod-wrap">
-            <div class="row">
-                <div class="col-md-5 col-sm-12 col-xs-12">
-                    <div class="Image">
-                        <img src="../../Assets/Mosin%20Nagant.png" alt="Mosin Nagant" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-7 col-sm-12 col-xs-12">
-                    <div class="Title">
-                        <h5 class="Name">
-                            Mosin Nagant
-                            <a>
-                                <span>Rifle</span>
-                            </a>
-                        </h5>
-                        <p class="Price">
-                            <span>$212</span>
-                        </p>
-                    </div>
-                    <div class="Details">
-                        <p>Remember the Finland special Forces White Death? They use this gun for victory.</p>
-                    </div>
-                    <div class="InfoPadding">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a href="MNDetail.ejs" class="btn btn-info"><span>DETAILS</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <% }) %>
 </div>
 <%- include('../layouts/footer.ejs'); %>
 </body>

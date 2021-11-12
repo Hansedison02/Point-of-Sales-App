@@ -1,5 +1,5 @@
 const express = require('express')
-
+const Product = require('../models/products')
 const router = express.Router()
 
 router.get('/', async (req, res) => {
@@ -16,7 +16,8 @@ router.get(('/ARProduct'), async (req, res) => {
     res.render('pages/ARProduct')
 })
 router.get(('/RProduct'), async (req, res) => {
-    res.render('pages/RProduct')
+    const data = await Product.find();
+    res.render('pages/RProduct', {products: data})
 })
 router.get(('/RProduct/Arisaka38'), async (req, res) => {
     res.render('pages/a38detail')
