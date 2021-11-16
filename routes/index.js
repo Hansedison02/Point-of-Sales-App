@@ -1,6 +1,6 @@
 const express = require('express')
 const Product = require('../models/products')
-const Product1 = require('../models/ARProduct')
+const Product1 = require('../models/RProduct')
 const router = express.Router()
 
 router.get('/', async (req, res) => {
@@ -21,9 +21,9 @@ router.get(('/ARProduct'), async (req, res) => {
 router.get(('/RProduct'), async (req, res) => {
     const data = await Product.find();
     const data1 = await Product1.find();
-    res.render('pages/RProduct', {products: data, ARProducts: data1})
+    res.render('pages/RProduct', {products: data, RProducts: data1})
 })
-router.get(('/RProduct/Arisaka38'), async (req, res) => {
+router.get(('/Product/RF0004'), async (req, res) => {
     res.render('pages/a38detail')
 })
 
