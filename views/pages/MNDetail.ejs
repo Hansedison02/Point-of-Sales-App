@@ -23,22 +23,7 @@
 <div class="Logo">
     <img src= ../../Assets/Logo.png alt="Logo" class="responsive">
 </div>
-<div class="NavBar" id="navBar">
-    <a href="index.ejs">Home</a>
-    <a class="active nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Product
-        <div class="dropdown-menu">
-            <a class="dropdown-item" href="../layouts/HGProduct.ejs">Handgun</a>
-            <a class="active dropdown-item" href="RProduct.ejs">Rifle</a>
-            <a class="dropdown-item" href="../layouts/ARProduct.ejs">Assault Rifle</a>
-            <a class="dropdown-item" href="../layouts/SMGProduct.ejs">Sub-Machine Gun</a>
-        </div>
-    </a>
-    <a href="Order.ejs">Order</a>
-    <a href="about.ejs">About</a>
-    <a href="javascript:void(0);" class="icon" onclick="ResFunc()">
-        <i class="fa fa-bars"></i>
-    </a>
-</div>
+<%- include('../layouts/navbar.ejs', {state: 'detail'}); %>
 <div class="container bg-color">
         <div class="container-fluid">
             <div class="wrapper row">
@@ -73,7 +58,7 @@
                     </p>
                     <h2 class="price">Price: <span>$212</span></h2>
                     <div class="action">
-                        <a href="Order.ejs" class="btn btn-info" type="button">Order</a>
+                        <a href="/Order" class="btn btn-info" type="button">Order</a>
                     </div>
                 </div>
             </div>

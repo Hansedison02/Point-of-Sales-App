@@ -20,9 +20,11 @@
                     <a class="dropdown-item NavItem" id="change5">All Products</a>
                 </div>
             </a>
+        <% } else if(state === "detail") { %>
+        <a class="active NavItem" href="/Product">Product</a>
         <% } else { %>
         <a class="NavItem" href="/Product">Product</a>
-        <% } %>
+    <% } %>
             <a <% if(state === "Order") { %> class="active" <% } %> class="NavItem" href="/Order">Order</a>
             <a <% if(state === "About") { %> class="active" <% } %>class="NavItem" href="/about">About</a>
     <% if(type === "V1") { %>
