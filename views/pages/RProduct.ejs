@@ -52,6 +52,44 @@
     </div>
     <% }) %>
 </div>
+<% ARProducts.forEach((product) => { %>
+<div class="container">
+    <div class="col-xs-12 col-md-6">
+        <div class="ProductTable prod-wrap">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="Image">
+                        <img src="<%= product.imagePath%>>" alt="EMK3" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                    <div class="Title">
+                        <h5 class="Name">
+                            <%= product.name%>
+                            <a>
+                                <span><%= product.type%></span>
+                            </a>
+                        </h5>
+                        <p class="Price">
+                            <span>$<%= product.price%></span>
+                        </p>
+                    </div>
+                    <div class="Details">
+                        <p><%= product.detail%></p>
+                    </div>
+                    <div class="InfoPadding">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="<%= product.urlink%>" class="btn btn-info"><span>DETAILS</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <% }) %>
+</div>
 <%- include('../layouts/footer.ejs'); %>
 </body>
 </html>

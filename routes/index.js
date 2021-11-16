@@ -1,23 +1,27 @@
 const express = require('express')
 const Product = require('../models/products')
+const Product1 = require('../models/ARProduct')
 const router = express.Router()
 
 router.get('/', async (req, res) => {
     res.render('pages/index')
 })
-
+router.get(('/Product'), async (req, res) => {
+    res.render('pages/Product')
+})
 router.get(('/HGProduct'), async (req, res) => {
-    res.render('pages/HGProduct')
+    res.render('layouts/HGProduct')
 })
 router.get(('/SMGProduct'), async (req, res) => {
     res.render('pages/SMGProduct')
 })
 router.get(('/ARProduct'), async (req, res) => {
-    res.render('pages/ARProduct')
+    res.render('layouts/ARProduct')
 })
 router.get(('/RProduct'), async (req, res) => {
     const data = await Product.find();
-    res.render('pages/RProduct', {products: data})
+    const data1 = await Product1.find();
+    res.render('pages/RProduct', {products: data, ARProducts: data1})
 })
 router.get(('/RProduct/Arisaka38'), async (req, res) => {
     res.render('pages/a38detail')

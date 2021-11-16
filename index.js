@@ -13,7 +13,7 @@ app.use(session({
     secret: '123asd21asg45',
 }))
 
-mongoose.connect(('mongodb+srv://Takahashi18:hanekawa@kairsoftdb.rgdna.mongodb.net/kairsoftdatabase?retryWrites=true&w=majority')
+mongoose.connect(('mongodb+srv://Takahashi18:hanekawa@kairsoftdb.rgdna.mongodb.net/kairsoftdatabase?retryWrites=true&w=majority&ssl=true')
     , (err,res) => {
         if(err){
             console.error(err);
@@ -28,7 +28,7 @@ mongoose.connect(('mongodb+srv://Takahashi18:hanekawa@kairsoftdb.rgdna.mongodb.n
 const homeRoute = require('./routes/index');
 app.use('/', homeRoute)
 
-app.listen('3000', () => {
+app.listen('4000', () => {
     console.log('Server is active');
 });
 

@@ -8,15 +8,21 @@
 <div class="NavBar" id="navBar">
     <% var state;%>
     <% var type;%>
+    <% var st;%>
             <a <% if(state === "Home") { %> class="active" <% } %> class="NavItem" href="/">Home</a>
-            <a <% if(state === "product") { %> class="active" <% } %> class="nav-link dropdown-toggle NavItem" id="navbardrop" data-toggle="dropdown">Product
+    <% if(state === "product") { %>
+        <a class="active nav-link dropdown-toggle NavItem" id="navbardrop" data-toggle="dropdown">Product
                 <div class="dropdown-menu">
-                    <a class="dropdown-item NavItem" href="/HGProduct">Handgun</a>
-                    <a class="dropdown-item NavItem" href="/RProduct">Rifle</a>
-                    <a class="dropdown-item NavItem" href="/ARProduct">Assault Rifle</a>
-                    <a class="dropdown-item NavItem" href="/SMGProduct">Sub-Machine Gun</a>
+                    <a class="dropdown-item NavItem" id="change2">Handgun</a>
+                    <a class="dropdown-item NavItem" id="change4">Rifle</a>
+                    <a class="dropdown-item NavItem" id="change1">Assault Rifle</a>
+                    <a class="dropdown-item NavItem" id="change3">Sub-Machine Gun</a>
+                    <a class="dropdown-item NavItem" id="change5">All Products</a>
                 </div>
             </a>
+        <% } else { %>
+        <a class="NavItem" href="/Product">Product</a>
+        <% } %>
             <a <% if(state === "Order") { %> class="active" <% } %> class="NavItem" href="/Order">Order</a>
             <a <% if(state === "About") { %> class="active" <% } %>class="NavItem" href="/about">About</a>
     <% if(type === "V1") { %>
