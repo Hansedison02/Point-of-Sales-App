@@ -45,7 +45,7 @@ router.get(('/Product/MG0004'), async (req, res) => {
     res.render('pages/FNP90Detail')
 })
 router.get(('/Product/MG0005'), async (req, res) => {
-    res.render('pages/CZEVO3Detail')
+    res.render('pages/CZSEVO3Detail')
 })
 router.get(('/Product/MG0006'), async (req, res) => {
     res.render('pages/MP40Detail')
