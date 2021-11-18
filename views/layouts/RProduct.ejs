@@ -1,0 +1,38 @@
+<div class="container">
+    <% RProducts.forEach((data1) => { %>
+    <div class="col-xs-12 col-md-6">
+        <div class="ProductTable prod-wrap">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="Image">
+                        <img src=<%= data1.imagePath %> class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                    <div class="Title">
+                        <h5 class="Name">
+                            <%= data1.name%>
+                            <a>
+                                <span><%= data1.type%></span>
+                            </a>
+                        </h5>
+                        <p class="Price">
+                            <span>$<%= data1.price%></span>
+                        </p>
+                    </div>
+                    <div class="Details">
+                        <p><%= data1.detail%></p>
+                    </div>
+                    <div class="InfoPadding">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="<%= data1.urlink%>" class="btn btn-info"><span>DETAILS</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <% }) %>
+</div>

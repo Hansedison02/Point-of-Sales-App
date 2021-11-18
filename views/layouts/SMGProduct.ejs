@@ -1,270 +1,38 @@
 <div class="container">
-    <div class="col-xs-12 col-md-6">
-        <div class="ProductTable prod-wrap">
-            <div class="row">
-                <div class="col-md-5 col-sm-12 col-xs-12">
-                    <div class="Image">
-                        <img src="../../Assets/H&KMP5.png" alt="H&KMP5" class="img-responsive">
+    <% SMGProducts.forEach((data3) => { %>
+        <div class="col-xs-12 col-md-6">
+            <div class="ProductTable prod-wrap">
+                <div class="row">
+                    <div class="col-md-5 col-sm-12 col-xs-12">
+                        <div class="Image">
+                            <img src=<%= data3.imagePath %> class="img-responsive">
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-7 col-sm-12 col-xs-12">
-                    <div class="Title">
-                        <h5 class="Name">
-                                Heckler & Koch MP5
-                            <a>
-                                <span>Sub-Machine Gun</span>
-                            </a>
-                        </h5>
-                        <p class="Price">
-                            <span>$221</span>
-                        </p>
-                    </div>
-                    <div class="Details">
-                        <p>Perfect Sub-Machine Gun for Indoor DeathMatch.</p>
-                    </div>
-                    <div class="InfoPadding">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a href="/Product/MG0001" class="btn btn-info"><span>DETAILS</span></a>
+                    <div class="col-md-7 col-sm-12 col-xs-12">
+                        <div class="Title">
+                            <h5 class="Name">
+                                <%= data3.name%>
+                                <a>
+                                    <span><%= data3.type%></span>
+                                </a>
+                            </h5>
+                            <p class="Price">
+                                <span>$<%= data3.price%></span>
+                            </p>
+                        </div>
+                        <div class="Details">
+                            <p><%= data3.detail%></p>
+                        </div>
+                        <div class="InfoPadding">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <a href="<%= data3.urlink%>" class="btn btn-info"><span>DETAILS</span></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="col-xs-12 col-md-6">
-        <div class="ProductTable prod-wrap">
-            <div class="row">
-                <div class="col-md-5 col-sm-12 col-xs-12">
-                    <div class="Image">
-                        <img src="../../Assets/H&KUMP.png" alt="H&KUMP" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-7 col-sm-12 col-xs-12">
-                    <div class="Title">
-                        <h5 class="Name">
-                            Heckler & Koch UMP
-                            <a><span>Sub-Machine Gun</span></a>
-                        </h5>
-                        <p class="Price">
-                            <span>$180</span>
-                        </p>
-                    </div>
-                    <div class="Details">
-                        <p>Newer but less strong than the MP5, for PDW.</p>
-                    </div>
-                    <div class="InfoPadding">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a href="/Product/MG0002" class="btn btn-info"><span>DETAILS</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-12 col-md-6">
-        <div class="ProductTable prod-wrap">
-            <div class="row">
-                <div class="col-md-5 col-sm-12 col-xs-12">
-                    <div class="Image">
-                        <img src="../../Assets/H&KMP7.png" alt="H&KMP7" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-7 col-sm-12 col-xs-12">
-                    <div class="Title">
-                        <h5 class="Name">
-                            Heckler & Koch MP7
-                            <a><span>Sub-Machine Gun</span></a>
-                        </h5>
-                        <p class="Price">
-                            <span>$241</span>
-                        </p>
-                    </div>
-                    <div class="Details">
-                        <p>Machine Gun with less weight than it's ancestor, for PDW.</p>
-                    </div>
-                    <div class="InfoPadding">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a href="/Product/MG0003" class="btn btn-info"><span>DETAILS</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-12 col-md-6">
-        <div class="ProductTable prod-wrap">
-            <div class="row">
-                <div class="col-md-5 col-sm-12 col-xs-12">
-                    <div class="Image">
-                        <img src="../../Assets/FNP90.png" alt="FNP90" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-7 col-sm-12 col-xs-12">
-                    <div class="Title">
-                        <h5 class="Name">
-                            FN P-90
-                            <a>
-                                <span>Sub-Machine Gun</span>
-                            </a>
-                        </h5>
-                        <p class="Price">
-                            <span>$325</span>
-                        </p>
-                    </div>
-                    <div class="Details">
-                        <p>Been around in the Asian market but limited due to licensing issues.</p>
-                    </div>
-                    <div class="InfoPadding">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a href="/Product/MG0004" class="btn btn-info"><span>DETAILS</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-12 col-md-6">
-        <div class="ProductTable prod-wrap">
-            <div class="row">
-                <div class="col-md-5 col-sm-12 col-xs-12">
-                    <div class="Image">
-                        <img src="../../Assets/CZSEVO3.png" alt="Scorpion3" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-7 col-sm-12 col-xs-12">
-                    <div class="Title">
-                        <h5 class="Name">
-                            CZ Scorpion Evo-3 A1
-                            <a>
-                                <span>Sub-Machine Gun</span>
-                            </a>
-                        </h5>
-                        <p class="Price">
-                            <span>$450</span>
-                        </p>
-                    </div>
-                    <div class="Details">
-                        <p>Experience the EVO 3 Like a real gun. Equipped with BET Carbine.</p>
-                    </div>
-                    <div class="InfoPadding">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a href="/Product/MG0005" class="btn btn-info"><span>DETAILS</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-12 col-md-6">
-        <div class="ProductTable prod-wrap">
-            <div class="row">
-                <div class="col-md-5 col-sm-12 col-xs-12">
-                    <div class="Image">
-                        <img src="../../Assets/MP40.png" alt="MP40" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-7 col-sm-12 col-xs-12">
-                    <div class="Title">
-                        <h5 class="Name">
-                            MP-40
-                            <a>
-                                <span>Sub-Machine Gun</span>
-                            </a>
-                        </h5>
-                        <p class="Price">
-                            <span>$300</span>
-                        </p>
-                    </div>
-                    <div class="Details">
-                        <p>The realistic replica of the famous WW2 SMG made by Umarex.</p>
-                    </div>
-                    <div class="InfoPadding">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a href="/Product/MG0006" class="btn btn-info"><span>DETAILS</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-12 col-md-6">
-        <div class="ProductTable prod-wrap">
-            <div class="row">
-                <div class="col-md-5 col-sm-12 col-xs-12">
-                    <div class="Image">
-                        <img src="../../Assets/KrissSVD.png" alt="KSVD" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-7 col-sm-12 col-xs-12">
-                    <div class="Title">
-                        <h5 class="Name">
-                            Kriss SVD
-                            <a><span>Sub-Machine Gun</span></a>
-                        </h5>
-                        <p class="Price">
-                            <span>$255</span>
-                        </p>
-                    </div>
-                    <div class="Details">
-                        <p>This flexible lightweight Sub-Machine Gun also made us easier to Dash.</p>
-                    </div>
-                    <div class="InfoPadding">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a href="/Product/MG0007" class="btn btn-info"><span>DETAILS</span></a>
-                            </div>
-                            <div class="col-md-12">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-12 col-md-6">
-        <div class="ProductTable prod-wrap">
-            <div class="row">
-                <div class="col-md-5 col-sm-12 col-xs-12">
-                    <div class="Image">
-                        <img src="../../Assets/KrissV.png" alt="KV" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-7 col-sm-12 col-xs-12">
-                    <div class="Title">
-                        <h5 class="Name">
-                            Kriss Vector
-                            <a><span>Sub-Machine Gun</span></a>
-                        </h5>
-                        <p class="Price">
-                            <span>$355</span>
-                        </p>
-                    </div>
-                    <div class="Details">
-                        <p>Improvement of Kriss SVD Sub-Machine Gun.</p>
-                    </div>
-                    <div class="InfoPadding">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a href="/Product/MG0008" class="btn btn-info"><span>DETAILS</span></a>
-                            </div>
-                            <div class="col-md-12">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <% }) %>
 </div>

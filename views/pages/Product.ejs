@@ -15,6 +15,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<div id="result3">
+    <%- include('../layouts/RProduct.ejs')%>
+</div>
 <div id="result">
     <%- include('../layouts/ARProduct.ejs')%>
 </div>
@@ -29,6 +32,7 @@
     document.getElementById("result1").hidden = true;
     document.getElementById("result").hidden = true;
     document.getElementById("result2").hidden = true;
+    document.getElementById("result3").hidden = true;
     const $result = $('#result');
     const $result1 = $('#result1');
     const $result2 = $('#result2');
@@ -36,21 +40,31 @@
             document.getElementById("result1").hidden = true;
             document.getElementById("result").hidden = false;
             document.getElementById("result2").hidden = true;
+            document.getElementById("result3").hidden = true;
         });
         $('#change2').click(function () {
             document.getElementById("result").hidden = true;
             document.getElementById("result1").hidden = false;
             document.getElementById("result2").hidden = true;
+            document.getElementById("result3").hidden = true;
         });
         $('#change3').click(function () {
         document.getElementById("result").hidden = true;
         document.getElementById("result1").hidden = true;
             document.getElementById("result2").hidden = false;
+            document.getElementById("result3").hidden = true;
         });
+    $('#change4').click(function () {
+        document.getElementById("result").hidden = true;
+        document.getElementById("result1").hidden = true;
+        document.getElementById("result2").hidden = true;
+        document.getElementById("result3").hidden = false;
+    });
         $('#change5').click(function () {
         document.getElementById("result").hidden = false;
         document.getElementById("result1").hidden = false;
         document.getElementById("result2").hidden = false;
+            document.getElementById("result3").hidden = false;
         });
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

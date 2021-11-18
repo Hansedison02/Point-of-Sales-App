@@ -15,7 +15,7 @@ mongoose.connect(('mongodb+srv://Takahashi18:hanekawa@kairsoftdb.rgdna.mongodb.n
 const RProducts = [
     new RProduct({
         id: 'RF0001',
-        imagePath: '../../Assets/EMK3.png',
+        imagePath: './public/Assets/EMK3.png',
         name: 'Enfield Mk-3',
         modelType: 'Rifle',
         price: 121,
@@ -24,7 +24,7 @@ const RProducts = [
     }),
     new RProduct({
         id: 'RF0002',
-        imagePath: '../../Assets/FR%20F2.png',
+        imagePath: './public/Assets/FRF2.png',
         name: 'FR-F2',
         modelType: 'Sniper Rifle',
         price: 231,
@@ -33,7 +33,7 @@ const RProducts = [
     }),
     new RProduct({
         id: 'RF0003',
-        imagePath: '../../Assets/Krag-Jorgensen.png',
+        imagePath: './public/Assets/Krag-Jorgensen.png',
         name: 'Krag-Jørgensen',
         modelType: 'Rifle',
         price: 255,
@@ -42,7 +42,7 @@ const RProducts = [
     }),
     new RProduct({
         id: 'RF0004',
-        imagePath: '../../Assets/A38.png',
+        imagePath: './public/Assets/A38.png',
         name: 'Arisaka Type-38',
         modelType: 'Rifle',
         price: 220,
@@ -51,7 +51,7 @@ const RProducts = [
     }),
     new RProduct({
         id: 'RF0005',
-        imagePath: '../../Assets/M110K1.png',
+        imagePath: './public/Assets/M110K1.png',
         name: 'M110-K1',
         modelType: 'Sniper Rifle',
         price: 255,

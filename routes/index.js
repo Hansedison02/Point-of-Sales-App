@@ -1,18 +1,20 @@
 const express = require('express')
-const Product = require('../models/products')
 const Product1 = require('../models/RProduct')
+const Product2 = require('../models/ARProduct')
+const Product3 = require('../models/SMGProduct')
+const Product4 = require('../models/HGProduct')
+
 const router = express.Router()
 
 router.get('/', async (req, res) => {
     res.render('pages/index')
 })
 router.get(('/Product'), async (req, res) => {
-    res.render('pages/Product')
-})
-router.get(('/RProduct'), async (req, res) => {
-    const data = await Product.find();
     const data1 = await Product1.find();
-    res.render('pages/RProduct', {products: data, RProducts: data1})
+    const data2 = await Product2.find();
+    const data3 = await Product3.find();
+    const data4 = await Product4.find();
+    res.render('pages/Product', {RProducts: data1, ARProducts: data2, SMGProducts: data3, HGProducts: data4})
 })
 router.get(('/Product/RF0001'), async (req, res) => {
     res.render('pages/EMKDetail')

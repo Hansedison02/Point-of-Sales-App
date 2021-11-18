@@ -1,270 +1,38 @@
 <div class="container">
-    <div class="col-xs-12 col-md-6">
-        <div class="ProductTable prod-wrap">
-            <div class="row">
-                <div class="col-md-5 col-sm-12 col-xs-12">
-                    <div class="Image">
-                        <img src="../../Assets/FNX-TAC45.png" alt="TAC-45" class="img-responsive">
+    <% HGProducts.forEach((data4) => { %>
+        <div class="col-xs-12 col-md-6">
+            <div class="ProductTable prod-wrap">
+                <div class="row">
+                    <div class="col-md-5 col-sm-12 col-xs-12">
+                        <div class="Image">
+                            <img src=<%= data4.imagePath %> class="img-responsive">
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-7 col-sm-12 col-xs-12">
-                    <div class="Title">
-                        <h5 class="Name">
-                                FN X TAC-45
-                            <a>
-                                <span>Handgun</span>
-                            </a>
-                        </h5>
-                        <p class="Price">
-                            <span>$175</span>
-                        </p>
-                    </div>
-                    <div class="Details">
-                        <p>Common handgun in the Battlefield with reliable accuracy. </p>
-                    </div>
-                    <div class="InfoPadding">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a href="/Product/HG0001" class="btn btn-info"><span>DETAILS</span></a>
+                    <div class="col-md-7 col-sm-12 col-xs-12">
+                        <div class="Title">
+                            <h5 class="Name">
+                                <%= data4.name%>
+                                <a>
+                                    <span><%= data4.type%></span>
+                                </a>
+                            </h5>
+                            <p class="Price">
+                                <span>$<%= data4.price%></span>
+                            </p>
+                        </div>
+                        <div class="Details">
+                            <p><%= data4.detail%></p>
+                        </div>
+                        <div class="InfoPadding">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <a href="<%= data4.urlink%>" class="btn btn-info"><span>DETAILS</span></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="col-xs-12 col-md-6">
-        <div class="ProductTable prod-wrap">
-            <div class="row">
-                <div class="col-md-5 col-sm-12 col-xs-12">
-                    <div class="Image">
-                        <img src="../../Assets/FN-BHP3.png" alt="BHP3" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-7 col-sm-12 col-xs-12">
-                    <div class="Title">
-                        <h5 class="Name">
-                                FN Browning Hi-Power Mk.3
-                            <a><span>Handgun</span></a>
-                        </h5>
-                        <p class="Price">
-                            <span>$211</span>
-                        </p>
-                    </div>
-                    <div class="Details">
-                        <p>One of the first suitable handgun for laser sight equipment.</p>
-                    </div>
-                    <div class="InfoPadding">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a href="/Product/HG0002" class="btn btn-info"><span>DETAILS</span></a>
-                            </div>
-                            <div class="col-md-12">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-12 col-md-6">
-        <div class="ProductTable prod-wrap">
-            <div class="row">
-                <div class="col-md-5 col-sm-12 col-xs-12">
-                    <div class="Image">
-                        <img src="../../Assets/G18C.png" alt="G18C" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-7 col-sm-12 col-xs-12">
-                    <div class="Title">
-                        <h5 class="Name">
-                            Glock 18C
-                            <a><span>Handgun</span></a>
-                        </h5>
-                        <p class="Price">
-                            <span>$87</span>
-                        </p>
-                    </div>
-                    <div class="Details">
-                        <p>A quick Automatic Handgun for Beginners.</p>
-                    </div>
-                    <div class="InfoPadding">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a href="/Product/HG0003" class="btn btn-info"><span>DETAILS</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-12 col-md-6">
-        <div class="ProductTable prod-wrap">
-            <div class="row">
-                <div class="col-md-5 col-sm-12 col-xs-12">
-                    <div class="Image">
-                        <img src="../../Assets/G17.png" alt="G18C" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-7 col-sm-12 col-xs-12">
-                    <div class="Title">
-                        <h5 class="Name">
-                            Glock 17
-                            <a><span>Handgun</span></a>
-                        </h5>
-                        <p class="Price">
-                            <span>$99</span>
-                        </p>
-                    </div>
-                    <div class="Details">
-                        <p>A stable powerful common Handgun for Personal Defense.</p>
-                    </div>
-                    <div class="InfoPadding">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a href="/Product/HG0004" class="btn btn-info"><span>DETAILS</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-12 col-md-6">
-        <div class="ProductTable prod-wrap">
-            <div class="row">
-                <div class="col-md-5 col-sm-12 col-xs-12">
-                    <div class="Image">
-                        <img src="../../Assets/H&KUSP.png" alt="H&K USP" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-7 col-sm-12 col-xs-12">
-                    <div class="Title">
-                        <h5 class="Name">
-                            Heckler & Koch USP
-                            <a>
-                                <span>Handgun</span>
-                            </a>
-                        </h5>
-                        <p class="Price">
-                            <span>$155</span>
-                        </p>
-                    </div>
-                    <div class="Details">
-                        <p>An Elite handgun usable for Elite Spec-Ops. </p>
-                    </div>
-                    <div class="InfoPadding">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a href="/Product/HG0006" class="btn btn-info"><span>DETAILS</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-12 col-md-6">
-        <div class="ProductTable prod-wrap">
-            <div class="row">
-                <div class="col-md-5 col-sm-12 col-xs-12">
-                    <div class="Image">
-                        <img src="../../Assets/H&KVP9.png" alt="H&K USP" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-7 col-sm-12 col-xs-12">
-                    <div class="Title">
-                        <h5 class="Name">
-                            Heckler & Koch VP9
-                            <a>
-                                <span>Handgun</span>
-                            </a>
-                        </h5>
-                        <p class="Price">
-                            <span>$125</span>
-                        </p>
-                    </div>
-                    <div class="Details">
-                        <p>A very reliable Personal Defense Handgun. </p>
-                    </div>
-                    <div class="InfoPadding">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a href="/Product/HG0005" class="btn btn-info"><span>DETAILS</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-12 col-md-6">
-        <div class="ProductTable prod-wrap">
-            <div class="row">
-                <div class="col-md-5 col-sm-12 col-xs-12">
-                    <div class="Image">
-                        <img src="../../Assets/B92FS.png" alt="B92FS" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-7 col-sm-12 col-xs-12">
-                    <div class="Title">
-                        <h5 class="Name">
-                            Baretta 92-FS "Samurai Edge"
-                            <a>
-                                <span>Handgun</span>
-                            </a>
-                        </h5>
-                        <p class="Price">
-                            <span>$259</span>
-                        </p>
-                    </div>
-                    <div class="Details">
-                        <p>For those who liked Resident Evil Series.</p>
-                    </div>
-                    <div class="InfoPadding">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a href="/Product/HG0007" class="btn btn-info"><span>DETAILS</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-12 col-md-6">
-        <div class="ProductTable prod-wrap">
-            <div class="row">
-                <div class="col-md-5 col-sm-12 col-xs-12">
-                    <div class="Image">
-                        <img src="../../Assets/TPT99.png" alt="AK-103" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-7 col-sm-12 col-xs-12">
-                    <div class="Title">
-                        <h5 class="Name">
-                            Taurus PT-99
-                            <a>
-                                <span>Handgun</span>
-                            </a>
-                        </h5>
-                        <p class="Price">
-                            <span>$235</span>
-                        </p>
-                    </div>
-                    <div class="Details">
-                        <p>Handgun with an awesome stability, for those who liked rapid battles.</p>
-                    </div>
-                    <div class="InfoPadding">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <a href="/Product/HG0008" class="btn btn-info"><span>DETAILS</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <% }) %>
 </div>
