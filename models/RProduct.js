@@ -28,6 +28,10 @@ const productSchema = mongoose.Schema({
     urlink: {
         type: String,
         required: true
+    },
+    stock: {
+        type: Number,
+        required: true
     }
 });
 

@@ -13,6 +13,7 @@
     <img src= ../../Assets/Logo.png alt="Logo" class="responsive">
 </div>
 <%- include('../layouts/navbar.ejs', {type: 'V1'}); %>
+<% var i = 1;%>
 <div class="container">
 <table class="Table" id="customers">
     <tr>
@@ -21,78 +22,42 @@
         <th>Stock Name</th>
         <th>Qty</th>
     </tr>
+    <% RProducts.forEach((data1) => { %>
     <tr>
-        <td>1</td>
-        <td>AR0001</td>
-        <td>USS M14</td>
-        <td>410</td>
+        <td><%= i%></td>
+        <td><%= data1.id%></td>
+        <td><%= data1.name%></td>
+        <td><%= data1.stock%></td>
     </tr>
-    <tr>
-        <td>2</td>
-        <td>AR0002</td>
-        <td>FAMAS</td>
-        <td>259</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>AR0003</td>
-        <td>SIG Sauer MCX Virtus SBR</td>
-        <td>133</td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>AR0004</td>
-        <td>SIG SG-550</td>
-        <td>047</td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>AR0005</td>
-        <td>AK-47 Mini Draco Full Upgrade</td>
-        <td>011</td>
-    </tr>
-    <tr>
-        <td>6</td>
-        <td>AR0006</td>
-        <td>AK-103</td>
-        <td>019</td>
-    </tr>
-    <tr>
-        <td>7</td>
-        <td>AR0007</td>
-        <td>Howa Type-64</td>
-        <td>006</td>
-    </tr>
-    <tr>
-        <td>8</td>
-        <td>AR0008</td>
-        <td>Howa Type-89</td>
-        <td>107</td>
-    </tr>
-    <tr>
-        <td>9</td>
-        <td>AR0009</td>
-        <td>Howa Type-20</td>
-        <td>005</td>
-    </tr>
-    <tr>
-        <td>10</td>
-        <td>AR0010</td>
-        <td>FN-SCAR</td>
-        <td>029</td>
-    </tr>
-    <tr>
-        <td>11</td>
-        <td>AR0011</td>
-        <td>Heckler & Koch HK-416</td>
-        <td>011</td>
-    </tr>
-    <tr>
-        <td>12</td>
-        <td>AR0012</td>
-        <td>Heckler & Koch G-36</td>
-        <td>177</td>
-    </tr>
+    <%i++;%>
+    <% }) %>
+    <% ARProducts.forEach((data2) => { %>
+        <tr>
+            <td><%= i%></td>
+            <td><%= data2.id%></td>
+            <td><%= data2.name%></td>
+            <td><%= data2.stock%></td>
+        </tr>
+        <%i++;%>
+    <% }) %>
+    <% SMGProducts.forEach((data3) => { %>
+        <tr>
+            <td><%= i%></td>
+            <td><%= data3.id %></td>
+            <td><%= data3.name %></td>
+            <td><%= data3.stock %></td>
+        </tr>
+        <% i++;%>
+    <% }) %>
+    <% HGProducts.forEach((data4) => { %>
+        <tr>
+            <td><%= i%></td>
+            <td><%= data4.id %></td>
+            <td><%= data4.name %></td>
+            <td><%= data4.stock %></td>
+        </tr>
+        <% i++;%>
+    <% }) %>
 </table>
 </div>
 <%- include('../layouts/footer.ejs'); %>

@@ -123,20 +123,24 @@ router.get(('/Product/Order'), async (req, res) => {
 })
 
 
-router.get(('/Order'), (req, res) => {
+router.get(('/Order'), async(req, res) => {
     res.render('pages/Order')
 })
 
-router.get(('/about'), (req, res) => {
+router.get(('/about'), async(req, res) => {
     res.render('pages/about')
 })
-router.get(('/Stock'), (req, res) => {
-    res.render('pages/Stock')
+router.get(('/Stock'), async(req, res) => {
+    const data1 = await Product1.find();
+    const data2 = await Product2.find();
+    const data3 = await Product3.find();
+    const data4 = await Product4.find();
+    res.render('pages/Stock', {RProducts: data1, ARProducts: data2, SMGProducts: data3, HGProducts: data4})
 })
-router.get(('/History'), (req, res) => {
+router.get(('/History'), async(req, res) => {
     res.render('pages/History')
 })
-router.get(('/Report'), (req, res) => {
+router.get(('/Report'), async(req, res) => {
     res.render('pages/Report')
 })
 
