@@ -13,6 +13,7 @@
     <img src= ../../Assets/Logo.png alt="Logo" class="responsive">
 </div>
 <%- include('../layouts/navbar.ejs', {type: 'V1'}); %>
+<% var i = 1;%>
 <div class="container">
 <table class="Table" id="customers">
     <tr>
@@ -23,45 +24,17 @@
         <th>Date</th>
         <th>Qty</th>
     </tr>
+    <% Customers.forEach((data) => { %>
     <tr>
-        <td>1</td>
-        <td>C0001</td>
-        <td>John Smith</td>
-        <td>R0003</td>
-        <td>29/03/2021</td>
-        <td>1</td>
+        <td><%= i%></td>
+        <td><%= data.cid%></td>
+        <td><%= data.name%></td>
+        <td><%= data.mid%></td>
+        <td><%= data.date.toDateString()%></td>
+        <td><%= data.qty%></td>
     </tr>
-    <tr>
-        <td>2</td>
-        <td>C0002</td>
-        <td>Tessou Tsuduri</td>
-        <td>AR0009</td>
-        <td>19/10/2020</td>
-        <td>4</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>C0003</td>
-        <td>Kojima Hideo</td>
-        <td>AR0011</td>
-        <td>08/11/2019</td>
-        <td>2</td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>C0004</td>
-        <td>Nicholas Sean</td>
-        <td>AR00010</td>
-        <td>18/01/2019</td>
-        <td>4</td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>C0005</td>
-        <td>Takahashi Sora</td>
-        <td>MG0001</td>
-        <td>10/11/2018</td>
-        <td>1</td>
+    <%i++;%>
+    <% }) %>
 </table>
 </div>
 <%- include('../layouts/footer.ejs'); %>

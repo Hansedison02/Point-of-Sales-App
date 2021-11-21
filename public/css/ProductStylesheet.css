@@ -19,6 +19,10 @@
     width: 50%;
 }
 
+.placehold{
+    margin-bottom: 400px;
+}
+
 .responsive {
     width: 75%;
     height: auto;

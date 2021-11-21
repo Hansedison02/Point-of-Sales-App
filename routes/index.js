@@ -3,6 +3,9 @@ const Product1 = require('../models/RProduct')
 const Product2 = require('../models/ARProduct')
 const Product3 = require('../models/SMGProduct')
 const Product4 = require('../models/HGProduct')
+const Customer = require('../models/Customer')
+const { data } = require('jquery');
+const customer = require('../models/Customer');
 
 const router = express.Router()
 
@@ -17,7 +20,7 @@ router.get(('/Product'), async (req, res) => {
     res.render('pages/Product', {RProducts: data1, ARProducts: data2, SMGProducts: data3, HGProducts: data4})
 })
 router.get(('/Product/RF0001'), async (req, res) => {
-    res.render('pages/EMKDetail')
+    res.render('pages/EMK3Detail')
 })
 router.get(('/Product/RF0002'), async (req, res) => {
     res.render('pages/FRF2Detail')
@@ -138,11 +141,39 @@ router.get(('/Stock'), async(req, res) => {
     res.render('pages/Stock', {RProducts: data1, ARProducts: data2, SMGProducts: data3, HGProducts: data4})
 })
 router.get(('/History'), async(req, res) => {
-    res.render('pages/History')
+    const data = await Customer.find();
+    res.render('pages/History', {Customers: data})
 })
 router.get(('/Report'), async(req, res) => {
-    res.render('pages/Report')
+    const data1 = await Product1.find();
+    const data2 = await Product2.find();
+    const data3 = await Product3.find();
+    const data4 = await Product4.find();
+    res.render('pages/Report', {RProducts: data1, ARProducts: data2, SMGProducts: data3, HGProducts: data4})
 })
+router.post('/Report', async(req,res) => {
+    const mid = req.body.mid;
+    const date = req.body.date;
+    const cid = req.body.cid;
+    const name = req.body.name;
+    const qty = req.body.qty;
+
+   const customers = new Customer ({
+       cid: cid,
+       name: name,
+       mid: mid,
+       date: date,
+       qty: qty
+   })
+     await customers.save((err, res) => {
+            if (err) console.error(err);
+            else {
+                console.log('Successful Input');
+            }
+        })
+        req.session.submit = true;
+        res.redirect('/History');
+    })
 
 
 module.exports = router;

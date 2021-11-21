@@ -75,6 +75,18 @@ input[type=submit]:hover {
     background-color: #18191d;
 }
 
+datalist{
+    background: #282e33;
+    color: #f1edec;
+    font-family: Comfortaa, sans-serif;
+
+}
+datalist option{
+
+    background: #282e33;
+    color: #f1edec;
+    font-family: Comfortaa, sans-serif;
+}
 
 .Logo
 {

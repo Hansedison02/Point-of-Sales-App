@@ -15,33 +15,48 @@
 <%- include('../layouts/navbar.ejs', {type: 'V1'}); %>
 
 <div class="container">
-    <form>
-        <div class="row">
-                <label>Stock Name</label>
-                <input type="text" name="stockid" placeholder="Stock ID" style="margin-right: 20px; width: 25%">
-                <input type="text" name="stockname" placeholder="Stock Name" style="margin-right: 20px; width: 35% ">
-                <input type="text" name="stockqty" placeholder="Qty" style="margin-right: 20px; width: 10%">
-                <img src="../../Assets/GSIcon.png" style="width: 5%">
+    <form action="/Report" method="post">
+        <div class="row mid">
+                <label>Stock ID</label>
+                <input type="text" list="Mid" name="mid" id="mid" placeholder="Stock ID" style="margin-right: 20px; width: 25%">
             </div>
-        <div class="row">
+        <div class="row date">
             <label>Period Date</label>
-            <input type="date" name="pddate" placeholder="Date" style="margin-right: 20px; width: 25%">
+            <input type="date" name="date" id="date" placeholder="Date" style="margin-right: 20px; width: 25%">
         </div>
         <div class="row">
-        <label>Assigned To</label>
-        <input type="Text" name="pid" placeholder="Person ID" style="margin-right: 20px; width: 25%">
-            <input type="Text" name="pname" placeholder="Person Name" style="margin-right: 20px; width: 35%">
-            <img src="../../Assets/GSIcon.png" style="width: 5%">
-        </div>
-        <div class="row">
+        <label>Customer ID</label>
+        <input type="Text" name="cid" id="cid" placeholder="ID" style="margin-right: 20px; width: 25%">
+            <label>Customer Name</label>
+            <input type="Text" name="name" id="name" placeholder="Name" style="margin-right: 20px; width: 35%">
+            </div>
+        <div class="row qty">
             <label>Required Qty</label>
-            <input type="number" name="qty" placeholder="Qty" style="margin-right: 20px; width: 10%">
+            <input type="number" name="qty" id="qty" placeholder="Qty" style="margin-right: 20px; width: 10%">
         </div>
         <div class="row">
             <input type="submit" value="Save" style="margin-top: 50px">
         </div>
     </form>
+    <datalist id="Mid">
+        <% RProducts.forEach((data1) => { %>
+        <option><%=data1.id%></option>
+        <% }) %>
+        <% ARProducts.forEach((data2) => { %>
+            <option><%=data2.id%></option>
+        <% }) %>
+        <% SMGProducts.forEach((data3) => { %>
+        <option><%=data3.id%></option>
+        <% }) %>
+        <% HGProducts.forEach((data4) => { %>
+        <option><%=data4.id%></option>
+        <% }) %>
+    </datalist>
+    <link rel="stylesheet" href="../../css/Report%20Page%20Stylesheet.css">
+    <script src=../../js/Responsive.js></script>
+    <script src="../../js/Sidebar.js"></script>
 </div>
 <%- include('../layouts/footer.ejs'); %>
 </body>
 </html>
+
