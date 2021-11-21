@@ -1,0 +1,5 @@
+{ "_id" : { "$oid" : "6198ff020f115460f4cf07a3" }, "cid" : "CO0001", "name" : "Takahashi Sora", "mid" : "MG0001", "date" : { "$date" : "2018-11-10T00:00:00.000+0000" }, "qty" : 1, "__v" : 0 },
+{ "_id" : { "$oid" : "619900cdbdfc3ef1d023c2d4" }, "cid" : "CO0002", "name" : "Nicholas Sean", "mid" : "AR0010", "date" : { "$date" : "2019-01-18T00:00:00.000+0000" }, "qty" : 4, "__v" : 0 },
+{ "_id" : { "$oid" : "619900dfbdfc3ef1d023c2d5" }, "cid" : "CO0003", "name" : "Kojima Hideo", "mid" : "AR0011", "date" : { "$date" : "2019-11-08T00:00:00.000+0000" }, "qty" : 2, "__v" : 0 },
+{ "_id" : { "$oid" : "619900e6bdfc3ef1d023c2d6" }, "cid" : "CO0004", "name" : "Tessou Tsuduri", "mid" : "AR0009", "date" : { "$date" : "2020-10-19T00:00:00.000+0000" }, "qty" : 4, "__v" : 0 },
+{ "_id" : { "$oid" : "619900eebdfc3ef1d023c2d7" }, "cid" : "CO0005", "name" : "John Smith", "mid" : "RF0003", "date" : { "$date" : "2021-03-29T00:00:00.000+0000" }, "qty" : 1, "__v" : 0 }
