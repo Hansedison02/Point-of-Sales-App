@@ -28,8 +28,8 @@ mongoose.connect(('mongodb+srv://Takahashi18:hanekawa@kairsoftdb.rgdna.mongodb.n
 const homeRoute = require('./routes/index');
 app.use('/', homeRoute)
 
-app.listen('4000', () => {
-    console.log('Server is active');
+app.listen(process.env.PORT || 4000, function(){
+  console.log("server is active");
 });
 
 
